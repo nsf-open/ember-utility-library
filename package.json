@@ -3,7 +3,9 @@
 	"author": "National Science Foundation",
 	"license": "MIT",
 	"private": true,
-	"workspaces": ["packages/@nsf/*"],
+	"workspaces": [
+		"packages/@nsf/*"
+	],
 	"scripts": {
 		"test": "lerna run test --stream"
 	},
