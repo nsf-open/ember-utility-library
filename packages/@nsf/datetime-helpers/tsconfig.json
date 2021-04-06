@@ -52,5 +52,15 @@
     "types/**/*",
     "test-support/**/*",
     "addon-test-support/**/*"
-  ]
+  ],
+	"typedocOptions": {
+		"name": "@nsf/datetime-helpers",
+		"out": "docs",
+		"excludeExternals": true,
+		"disableSources": false,
+
+		"entryPoints": [
+			"addon/index.ts",
+		]
+	}
 }
