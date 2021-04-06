@@ -7,6 +7,9 @@ export type ParseOptions = {
 	/** A custom formatting mask (e.g. MM/DD/YY). See: https://momentjs.com/docs/#/parsing/string-format/ */
 	format?: string;
 
+	/** If supplying a custom `format`, accept only that pattern and nothing else. */
+	exactFormatMatch?: boolean;
+
 	/** Whether or not to interpret an ambiguously parsed string as UTC. */
 	utc?: boolean;
 
@@ -20,7 +23,7 @@ export type ParseOptions = {
  * only ever return either a Date instance, or null.
  */
 export default function oneParserToRuleThemAll(value: any, options: ParseOptions = {}) {
-	const { format, utc, tz } = options;
+	const { format, utc, tz, exactFormatMatch } = options;
 
 	if (value instanceof Date) {
 		return value;
@@ -32,7 +35,10 @@ export default function oneParserToRuleThemAll(value: any, options: ParseOptions
 		return new Date(value);
 	}
 	else if (typeof value === 'string' && value.trim().length) {
-		const formats = format ? [format].concat(PARSE_FORMATS) : PARSE_FORMATS;
+		const formats = format
+			? (exactFormatMatch ? format : [format].concat(PARSE_FORMATS) )
+			: PARSE_FORMATS;
+
 		let time;
 
 		if (utc) {
@@ -40,10 +46,15 @@ export default function oneParserToRuleThemAll(value: any, options: ParseOptions
 		}
 		else if (typeof tz === 'string') {
 			time = moment.parseZone(value, formats);
-			const flags = time.parsingFlags();
 
-			if (flags.unusedTokens.length && flags.unusedTokens.includes('ZZ')) {
-				time.utcOffset(tz, true);
+			if (time.isValid()) {
+				const flags  = time.parsingFlags();
+				const format = time.creationData()?.format as string | undefined;
+
+				// Only apply a timezone if the incoming value didn't provide one
+				if ((format && !format.includes('ZZ')) || flags.unusedTokens.includes('ZZ')) {
+					time.utcOffset(tz, true);
+				}
 			}
 		}
 		else {

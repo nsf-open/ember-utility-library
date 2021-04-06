@@ -10,10 +10,12 @@ module('Unit | Utility | constants', function(hooks) {
 		assert.deepEqual(PARSE_FORMATS, [
 			'YYYY-MM-DD',
 			'MM/DD/YYYY',
-			'YYYY-MM-DD[T]HH:mm:ss.SSS',
+			'YYYY-MM-DDTHH:mm:ss.SSS',
+			'YYYY-MM-DDTHH:mm:ss',
 			'MM/DD/YYYY h:mm A',
-			'YYYY-MM-DD[T]HH:mm:ss.SSS ZZ',
 			'MM/DD/YYYY h:mm A ZZ',
+			'YYYY-MM-DDTHH:mm:ss.SSSZZ',
+			'YYYY-MM-DDTHH:mm:ssZZ',
 		]);
 	});
 });
