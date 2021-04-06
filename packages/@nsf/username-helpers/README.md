@@ -1,37 +1,24 @@
 @nsf/username-helpers
 ==============================================================================
+Utilities to help stitch together a person's name. 
 
-[Short description of the addon.]
-
-
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v2.18 or above
-* Ember CLI v2.13 or above
+With these tools in your application's belt taking several small strings like _"John"_, _"Hubert"_, 
+and _"Doe"_, and turning them into longer string like _"John H. Doe"_ or _"Doe, John H."_ is a piece 
+of cake.
 
 
 Installation
 ------------------------------------------------------------------------------
-
 ```
 ember install @nsf/username-helpers
 ```
 
 
-Usage
+API
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
 
 
-Contributing
+Compatibility
 ------------------------------------------------------------------------------
-
-See the [Contributing](CONTRIBUTING.md) guide for details.
-
-
-License
-------------------------------------------------------------------------------
-
-This project is licensed under the [MIT License](LICENSE.md).
+* Ember.js v3.6 or above
