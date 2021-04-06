@@ -56,6 +56,7 @@
 	"typedocOptions": {
 		"name": "@nsf/username-helpers",
 		"out": "docs",
+		"theme": "minimal",
 		"excludeExternals": true,
 		"disableSources": false,
 

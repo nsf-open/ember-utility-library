@@ -7,7 +7,8 @@
 		"packages/@nsf/*"
 	],
 	"scripts": {
-		"test": "lerna run --stream --parallel --no-bail test -- --test-port=0"
+		"test": "lerna run --stream --parallel --no-bail test -- --test-port=0",
+		"document": "lerna run document"
 	},
 	"devDependencies": {
 		"lerna": "^4.0.0"

@@ -1,15 +1,14 @@
 {
   "name": "@nsf/datetime-helpers",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Date and time parsing + formatting utilities using MomentJS.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://bitbucket.nsf.gov/scm/nsf-fe/utility-library.git",
   "license": "MIT",
-  "author": "",
+  "author": "National Science Foundation",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -21,7 +20,7 @@
     "test:all": "ember try:each",
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean",
-		"document": "typedoc ."
+		"document": "typedoc --tsconfig ./tsconfig.json"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.3",
@@ -90,5 +89,8 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+	"publishConfig": {
+		"registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
+	}
 }
