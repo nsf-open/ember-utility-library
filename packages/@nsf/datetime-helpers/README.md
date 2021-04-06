@@ -23,9 +23,9 @@ __Methods__
 
 __Computed Decorators__
 - [@middleEndianDateString](addon/computed-macros.ts#23)
-- [@middleEndianTimeString](/addon/computed-macros.ts#41)
-- [@middleEndianDateTimeString](/addon/computed-macros.ts#59)
-- [@bigEndianDateString](/addon/computed-macros.ts#77)
+- [@middleEndianTimeString](addon/computed-macros.ts#41)
+- [@middleEndianDateTimeString](addon/computed-macros.ts#59)
+- [@bigEndianDateString](addon/computed-macros.ts#77)
 
 
 Compatibility
