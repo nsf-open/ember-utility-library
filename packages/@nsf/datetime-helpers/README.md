@@ -1,37 +1,15 @@
 @nsf/datetime-helpers
 ==============================================================================
+Date and time parsing + formatting utilities using [MomentJS](https://momentjs.com/).
 
-[Short description of the addon.]
 
-
-Compatibility
+Usage
 ------------------------------------------------------------------------------
-
-* Ember.js v2.18 or above
-* Ember CLI v2.13 or above
-
-
-Installation
-------------------------------------------------------------------------------
-
 ```
 ember install @nsf/datetime-helpers
 ```
 
 
-Usage
+Compatibility
 ------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
-
-
-Contributing
-------------------------------------------------------------------------------
-
-See the [Contributing](CONTRIBUTING.md) guide for details.
-
-
-License
-------------------------------------------------------------------------------
-
-This project is licensed under the [MIT License](LICENSE.md).
+* Ember.js v3.6 or above
