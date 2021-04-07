@@ -16,7 +16,7 @@ ember install @nsf/username-utils
 
 API
 ------------------------------------------------------------------------------
-
+[Docs](docs/README.md)
 
 
 Compatibility

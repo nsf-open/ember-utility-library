@@ -56,10 +56,10 @@
 	"typedocOptions": {
 		"name": "@nsf/username-utils",
 		"out": "docs",
-		"theme": "minimal",
+		"readme": "none",
 		"excludeExternals": true,
 		"disableSources": false,
-
+		"namedAnchors": true,
 		"entryPoints": [
 			"addon/index.ts",
 		]
