@@ -11,8 +11,10 @@
 ### Functions
 
 - [fromUSD](README.md#fromusd)
+- [fromUSDFormat](README.md#fromusdformat)
 - [isNumeric](README.md#isnumeric)
 - [toUSD](README.md#tousd)
+- [toUSDFormat](README.md#tousdformat)
 
 ## Type aliases
 
@@ -36,7 +38,33 @@ Defined in: formatters.ts:2
 
 ### fromUSD
 
-▸ **fromUSD**(`value`: *any*): *number*
+▸ **fromUSD**(`dependantKey`: *string*): *default*<number, number\>
+
+Exposes the `fromUSDFormat` formatter as an Ember computed decorator that converts
+a formatted currency value to a float.
+
+```javascript
+public totalCost = "$12,345.55"
+
+@fromUSD('totalCost')
+public numericCost!: number; // => 12345.55
+```
+
+#### Parameters:
+
+Name | Type |
+:------ | :------ |
+`dependantKey` | *string* |
+
+**Returns:** *default*<number, number\>
+
+Defined in: computed-macros.ts:19
+
+___
+
+### fromUSDFormat
+
+▸ **fromUSDFormat**(`value`: *any*): *number*
 
 Converts a formatted currency value to a float.
 
@@ -80,9 +108,39 @@ ___
 
 ### toUSD
 
-▸ **toUSD**<T\>(`value`: T, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): T \| *string*
+▸ **toUSD**(`dependantKey`: *string*, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): *default*<any, any\>
 
-Converts a numerical value to USD currency. (e.g. 12345.99 ==> $12,345.99)
+Exposes the `toUSDFormat` formatter as an Ember computed decorator that converts
+a numerical value to USD currency.
+
+```javascript
+public someNumber = 12345.55
+
+@toUSD('someNumber')
+public formattedWhole!: string; // => "$12,345"
+
+@toUSD('someNumber', { cents: true })
+public formattedDouble!: string; // => "$12,345.55"
+```
+
+#### Parameters:
+
+Name | Type | Default value |
+:------ | :------ | :------ |
+`dependantKey` | *string* | - |
+`showCentsOrOptions` | [*ToFormatOptions*](README.md#toformatoptions) \| *boolean* | false |
+
+**Returns:** *default*<any, any\>
+
+Defined in: computed-macros.ts:40
+
+___
+
+### toUSDFormat
+
+▸ **toUSDFormat**<T\>(`value`: T, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): T \| *string*
+
+Converts a numerical value to USD currency.
 
 ```javascript
 toUSD(12345); // => "$12,345"
