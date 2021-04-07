@@ -5,16 +5,14 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://bitbucket.nsf.gov/scm/nsf-fe/utility-library.git",
   "license": "MIT",
-  "author": "",
+  "author": "National Science Foundation",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
     "build": "ember build",
-    "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",

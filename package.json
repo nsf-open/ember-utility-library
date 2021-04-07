@@ -1,16 +1,18 @@
 {
-	"name": "@nsf/utility-library",
-	"author": "National Science Foundation",
-	"license": "MIT",
-	"private": true,
-	"workspaces": [
-		"packages/@nsf/*"
-	],
-	"scripts": {
-		"test": "lerna run --stream --parallel --no-bail test -- --test-port=0",
-		"document": "lerna run document"
-	},
-	"devDependencies": {
-		"lerna": "^4.0.0"
-	}
+  "name": "@nsf/utility-library",
+  "author": "National Science Foundation",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/@nsf/*"
+  ],
+  "scripts": {
+    "each:document": "lerna run --parallel --no-bail document",
+		"each:test": "lerna run --stream --parallel --no-bail test -- --test-port=0",
+		"each:lint:js": "lerna run --stream --parallel --no-bail lint:js",
+		"each:cleanup": "lerna exec -- rm -rf ./dist ./coverage ./docs"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
