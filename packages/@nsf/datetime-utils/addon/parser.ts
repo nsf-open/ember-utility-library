@@ -48,11 +48,11 @@ export default function oneParserToRuleThemAll(value: any, options: ParseOptions
 			time = moment.parseZone(value, formats);
 
 			if (time.isValid()) {
-				const flags  = time.parsingFlags();
-				const format = time.creationData()?.format as string | undefined;
+				const flags = time.parsingFlags();
+				const mask  = time.creationData()?.format as string | undefined;
 
 				// Only apply a timezone if the incoming value didn't provide one
-				if ((format && !format.includes('ZZ')) || flags.unusedTokens.includes('ZZ')) {
+				if ((mask && !mask.includes('ZZ')) || flags.unusedTokens.includes('ZZ')) {
 					time.utcOffset(tz, true);
 				}
 			}
