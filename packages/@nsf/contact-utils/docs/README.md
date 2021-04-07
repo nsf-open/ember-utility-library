@@ -4,123 +4,25 @@
 
 ## Table of contents
 
-### Type aliases
-
-- [ToFormatOptions](README.md#toformatoptions)
-
 ### Functions
 
-- [fromUSD](README.md#fromusd)
-- [fromUSDFormat](README.md#fromusdformat)
-- [isNumeric](README.md#isnumeric)
-- [toUSD](README.md#tousd)
-- [toUSDFormat](README.md#tousdformat)
-
-## Type aliases
-
-### ToFormatOptions
-
-Ƭ **ToFormatOptions**: *object*
-
-Configuration options for the toUSD() formatter.
-
-#### Type declaration:
-
-Name | Type | Description |
-:------ | :------ | :------ |
-`accountingFormat`? | *boolean* | If true, negative values will be enclosed in parenthesis.   |
-`cents`? | *boolean* | If true, cents will be included to the typical hundredth precision.   |
-`currencySymbol`? | *boolean* | If true, the USD currency symbol ($) will be prefixed.   |
-
-Defined in: formatters.ts:2
+- [domesticUSPhoneNumber](README.md#domesticusphonenumber)
+- [toDomesticUSPhoneNumber](README.md#todomesticusphonenumber)
 
 ## Functions
 
-### fromUSD
+### domesticUSPhoneNumber
 
-▸ **fromUSD**(`dependantKey`: *string*): *default*<number, number\>
+▸ **domesticUSPhoneNumber**(`dependantKey`: *string*, `defaultValue?`: *string*): *default*<string, string\>
 
-Exposes the `fromUSDFormat` formatter as an Ember computed decorator that converts
-a formatted currency value to a float.
-
-```javascript
-public totalCost = "$12,345.55"
-
-@fromUSD('totalCost')
-public numericCost!: number; // => 12345.55
-```
-
-#### Parameters:
-
-Name | Type |
-:------ | :------ |
-`dependantKey` | *string* |
-
-**Returns:** *default*<number, number\>
-
-Defined in: computed-macros.ts:19
-
-___
-
-### fromUSDFormat
-
-▸ **fromUSDFormat**(`value`: *any*): *number*
-
-Converts a formatted currency value to a float.
+Exposes the `toDomesticUSPhoneNumber` formatter as an Ember computed decorator that normalizes a
+string or number into a standard US telephone number with area code.
 
 ```javascript
-fromUSD("$12,345"); // => 12345
+public phone = "1234567890"
 
-fromUSD("$12,345.55"); // => 12345.55
-
-fromUSD("(12,345.55)"); // => -12345.55
-```
-
-#### Parameters:
-
-Name | Type |
-:------ | :------ |
-`value` | *any* |
-
-**Returns:** *number*
-
-Defined in: formatters.ts:85
-
-___
-
-### isNumeric
-
-▸ **isNumeric**(`value`: *any*): value is number
-
-Checks whether the argument is a finite number.
-
-#### Parameters:
-
-Name | Type |
-:------ | :------ |
-`value` | *any* |
-
-**Returns:** value is number
-
-Defined in: formatters.ts:17
-
-___
-
-### toUSD
-
-▸ **toUSD**(`dependantKey`: *string*, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): *default*<any, any\>
-
-Exposes the `toUSDFormat` formatter as an Ember computed decorator that converts
-a numerical value to USD currency.
-
-```javascript
-public someNumber = 12345.55
-
-@toUSD('someNumber')
-public formattedWhole!: string; // => "$12,345"
-
-@toUSD('someNumber', { cents: true })
-public formattedDouble!: string; // => "$12,345.55"
+@domesticUSPhoneNumber('phone')
+public formattedPhone!: string; // => "(123) 456-7890"
 ```
 
 #### Parameters:
@@ -128,39 +30,38 @@ public formattedDouble!: string; // => "$12,345.55"
 Name | Type | Default value |
 :------ | :------ | :------ |
 `dependantKey` | *string* | - |
-`showCentsOrOptions` | [*ToFormatOptions*](README.md#toformatoptions) \| *boolean* | false |
+`defaultValue` | *string* | 'None' |
 
-**Returns:** *default*<any, any\>
+**Returns:** *default*<string, string\>
 
-Defined in: computed-macros.ts:40
+Defined in: computed-macros.ts:16
 
 ___
 
-### toUSDFormat
+### toDomesticUSPhoneNumber
 
-▸ **toUSDFormat**<T\>(`value`: T, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): T \| *string*
+▸ **toDomesticUSPhoneNumber**(`value`: *any*, `defaultValue?`: *string*): *string*
 
-Converts a numerical value to USD currency.
+Normalizes a string or number into a standard US telephone number with area code.
+If a valid string cannot be created, a default value will be returned.
 
 ```javascript
-toUSD(12345); // => "$12,345"
+toDomesticUSPhoneNumber("1234567890"); // => "(123) 456-7890"
 
-toUSD(12345, { cents: true }); // => "$12,345.00"
+toDomesticUSPhoneNumber("123-456-7890"); // => "(123) 456-7890"
+
+toDomesticUSPhoneNumber(1234567890); // => "(123) 456-7890"
+
+toDomesticUSPhoneNumber("1234", "N/A"); // => "N/A"
 ```
-
-#### Type parameters:
-
-Name |
-:------ |
-`T` |
 
 #### Parameters:
 
 Name | Type | Default value |
 :------ | :------ | :------ |
-`value` | T | - |
-`showCentsOrOptions` | [*ToFormatOptions*](README.md#toformatoptions) \| *boolean* | false |
+`value` | *any* | - |
+`defaultValue` | *string* | 'None' |
 
-**Returns:** T \| *string*
+**Returns:** *string*
 
-Defined in: formatters.ts:31
+Defined in: formatters.ts:23
