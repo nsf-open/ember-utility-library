@@ -1,0 +1,88 @@
+/** Configuration options for the toUSD() formatter. */
+export type ToFormatOptions = {
+	/** If true, cents will be included to the typical hundredth precision.  */
+	cents?: boolean;
+
+	/** If true, the USD currency symbol ($) will be prefixed. */
+	currencySymbol?: boolean;
+
+	/** If true, negative values will be enclosed in parenthesis. */
+	accountingFormat?: boolean;
+}
+
+
+/**
+ * Checks whether the argument is a finite number.
+ */
+export function isNumeric(value: any): value is number {
+	return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
+
+/**
+ * Converts a numerical value to USD currency. (e.g. 12345.99 ==> $12,345.99)
+ *
+ * ```javascript
+ *
+ * ```
+ */
+export function toUSD<T>(value: T, showCentsOrOptions: ToFormatOptions | boolean = false): T | string {
+	if (!isNumeric(value)) {
+		return value;
+	}
+
+	const defaultOpts = {
+		cents: false,
+		currencySymbol: true,
+		accountingFormat: false,
+	};
+
+	const opts = typeof showCentsOrOptions === 'boolean'
+		? { ...defaultOpts, cents: showCentsOrOptions }
+		: { ...defaultOpts, ...showCentsOrOptions };
+
+	const formatterOpts = {
+		style: 'currency',
+		currency: 'USD',
+		minimumFractionDigits: 2,
+		maximumFractionDigits: 2,
+		// Not currently supported in Safari, but when it is we can let Intl do this work.
+		// currencySign: opts.accountingFormat ? 'accounting' : 'standard',
+	}
+
+	if (!opts.cents) {
+		formatterOpts.minimumFractionDigits = 0;
+		formatterOpts.maximumFractionDigits = 0;
+	}
+
+	let formattedResult = new Intl.NumberFormat('en-US', formatterOpts).format(value);
+
+	if (!opts.currencySymbol) {
+		formattedResult = formattedResult.replace('$', '');
+	}
+
+	if (opts.accountingFormat && value < 0) {
+		formattedResult = `(${ formattedResult.replace('-', '') })`;
+	}
+
+	return formattedResult;
+}
+
+
+/**
+ * Converts a formatted currency value to a float. (e.g. $12,345.99 ==> 12345.99)
+ */
+export function fromUSD(value: any): number {
+	if (typeof value === 'string') {
+		let val = value.trim();
+
+		// Accounting format negative value
+		if (val.startsWith('(') && val.endsWith(')')) {
+			val = `-${val.substring(1, val.length - 1)}`;
+		}
+
+		return parseFloat(val.replace(/[^0-9\-.]/g, ''));
+	}
+
+	return typeof value === 'number' ? value : NaN;
+}
