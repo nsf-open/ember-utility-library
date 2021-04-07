@@ -20,7 +20,7 @@ export function isNumeric(value: any): value is number {
 
 
 /**
- * Converts a numerical value to USD currency. (e.g. 12345.99 ==> $12,345.99)
+ * Converts a numerical value to USD currency.
  *
  * ```javascript
  * toUSD(12345); // => "$12,345"
@@ -28,7 +28,7 @@ export function isNumeric(value: any): value is number {
  * toUSD(12345, { cents: true }); // => "$12,345.00"
  * ```
  */
-export function toUSD<T>(value: T, showCentsOrOptions: ToFormatOptions | boolean = false): T | string {
+export function toUSDFormat<T>(value: T, showCentsOrOptions: ToFormatOptions | boolean = false): T | string {
 	if (!isNumeric(value)) {
 		return value;
 	}
@@ -82,7 +82,7 @@ export function toUSD<T>(value: T, showCentsOrOptions: ToFormatOptions | boolean
  * fromUSD("(12,345.55)"); // => -12345.55
  * ```
  */
-export function fromUSD(value: any): number {
+export function fromUSDFormat(value: any): number {
 	if (typeof value === 'string') {
 		let val = value.trim();
 
