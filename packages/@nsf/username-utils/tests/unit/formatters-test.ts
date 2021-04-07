@@ -3,7 +3,7 @@ import { setupTest } from 'ember-qunit';
 import {
 	toFirstNameFirstFormat,
 	toLastNameFirstFormat,
-} from '@nsf/username-helpers';
+} from '@nsf/username-utils';
 
 
 module('Unit | Utility | formatters', function(hooks) {

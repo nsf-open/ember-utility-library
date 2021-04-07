@@ -28,16 +28,16 @@
         "tests/dummy/app/*",
         "app/*"
       ],
-      "@nsf/username-helpers": [
+      "@nsf/username-utils": [
         "addon"
       ],
-      "@nsf/username-helpers/*": [
+      "@nsf/username-utils/*": [
         "addon/*"
       ],
-      "@nsf/username-helpers/test-support": [
+      "@nsf/username-utils/test-support": [
         "addon-test-support"
       ],
-      "@nsf/username-helpers/test-support/*": [
+      "@nsf/username-utils/test-support/*": [
         "addon-test-support/*"
       ],
       "*": [
@@ -54,7 +54,7 @@
     "addon-test-support/**/*"
   ],
 	"typedocOptions": {
-		"name": "@nsf/username-helpers",
+		"name": "@nsf/username-utils",
 		"out": "docs",
 		"theme": "minimal",
 		"excludeExternals": true,

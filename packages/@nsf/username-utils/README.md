@@ -1,4 +1,4 @@
-@nsf/username-helpers
+@nsf/username-utils
 ==============================================================================
 Utilities to help stitch together a person's name. 
 
@@ -10,7 +10,7 @@ of cake.
 Installation
 ------------------------------------------------------------------------------
 ```
-ember install @nsf/username-helpers
+ember install @nsf/username-utils
 ```
 
 

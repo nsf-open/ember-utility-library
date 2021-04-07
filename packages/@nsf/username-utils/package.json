@@ -1,5 +1,5 @@
 {
-  "name": "@nsf/username-helpers",
+  "name": "@nsf/username-utils",
   "version": "0.1.0",
   "description": "Utilities to help stitch together a person's name.",
   "keywords": [

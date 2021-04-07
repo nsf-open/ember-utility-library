@@ -4,7 +4,7 @@ import { set, setProperties } from '@ember/object';
 import {
 	formatFirstNameFirst,
 	formatLastNameFirst,
-} from '@nsf/username-helpers';
+} from '@nsf/username-utils';
 
 
 module('Unit | Utility | computed-macros', function(hooks) {
