@@ -1,4 +1,4 @@
-@nsf/datetime-helpers
+@nsf/datetime-utils
 ==============================================================================
 Date and time parsing + formatting utilities using [MomentJS](https://momentjs.com/).
 
@@ -6,7 +6,7 @@ Date and time parsing + formatting utilities using [MomentJS](https://momentjs.c
 Installation
 ------------------------------------------------------------------------------
 ```
-ember install @nsf/datetime-helpers
+ember install @nsf/datetime-utils
 ```
 
 API

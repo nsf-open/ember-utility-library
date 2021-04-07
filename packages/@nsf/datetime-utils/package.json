@@ -1,5 +1,5 @@
 {
-  "name": "@nsf/datetime-helpers",
+  "name": "@nsf/datetime-utils",
   "version": "0.0.1",
   "description": "Date and time parsing + formatting utilities using MomentJS.",
   "keywords": [

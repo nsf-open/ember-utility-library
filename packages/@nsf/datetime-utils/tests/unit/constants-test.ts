@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
-import { PARSE_FORMATS } from '@nsf/datetime-helpers';
+import { PARSE_FORMATS } from '@nsf/datetime-utils';
 
 
 module('Unit | Utility | constants', function(hooks) {

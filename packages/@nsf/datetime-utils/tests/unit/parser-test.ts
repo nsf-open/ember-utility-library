@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
-import { parseDateTime } from '@nsf/datetime-helpers';
+import { parseDateTime } from '@nsf/datetime-utils';
 import moment from 'moment';
 
 

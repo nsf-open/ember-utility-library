@@ -28,16 +28,16 @@
         "tests/dummy/app/*",
         "app/*"
       ],
-      "@nsf/datetime-helpers": [
+      "@nsf/datetime-utils": [
         "addon"
       ],
-      "@nsf/datetime-helpers/*": [
+      "@nsf/datetime-utils/*": [
         "addon/*"
       ],
-      "@nsf/datetime-helpers/test-support": [
+      "@nsf/datetime-utils/test-support": [
         "addon-test-support"
       ],
-      "@nsf/datetime-helpers/test-support/*": [
+      "@nsf/datetime-utils/test-support/*": [
         "addon-test-support/*"
       ],
       "*": [
@@ -54,7 +54,7 @@
     "addon-test-support/**/*"
   ],
 	"typedocOptions": {
-		"name": "@nsf/datetime-helpers",
+		"name": "@nsf/datetime-utils",
 		"out": "docs",
 		"theme": "minimal",
 		"excludeExternals": true,

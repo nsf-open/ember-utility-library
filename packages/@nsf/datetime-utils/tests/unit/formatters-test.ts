@@ -7,7 +7,7 @@ import {
 	toBigEndianDateString,
 	toBigEndianTimeString,
 	toBigEndianDateTimeString,
-} from '@nsf/datetime-helpers';
+} from '@nsf/datetime-utils';
 
 
 module('Unit | Utility | formatters', function(hooks) {
