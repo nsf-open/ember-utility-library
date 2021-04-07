@@ -1,6 +1,6 @@
 @nsf/contact-utils
 ==============================================================================
-Utilities for converting numbers to currency, and currency to numbers.
+Utilities for phone numbers, email, physical addresses, and more. _(or less, as it stands right now)_
 
 
 Installation

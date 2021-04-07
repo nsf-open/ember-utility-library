@@ -1,7 +1,7 @@
 {
   "name": "@nsf/contact-utils",
   "version": "0.1.0",
-  "description": "Utilities for phone numbers, email and physical addresses, and other.",
+  "description": "Utilities for phone numbers, email, physical addresses, and more.",
   "keywords": [
     "ember-addon"
   ],
