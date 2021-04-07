@@ -1,6 +1,6 @@
 {
   "name": "@nsf/username-helpers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Utilities to help stitch together a person's name.",
   "keywords": [
     "ember-addon"
@@ -21,7 +21,7 @@
     "test:all": "ember try:each",
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean",
-		"document": "typedoc --tsconfig ./tsconfig.json"
+    "document": "typedoc --tsconfig ./tsconfig.json"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.3",
@@ -90,7 +90,7 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
-	"publishConfig": {
-		"registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
-	}
+  "publishConfig": {
+    "registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
+  }
 }
