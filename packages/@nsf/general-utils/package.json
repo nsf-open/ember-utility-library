@@ -92,6 +92,7 @@
     "configPath": "tests/dummy/config"
   },
   "publishConfig": {
+		"access": "public",
     "registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
   }
 }
