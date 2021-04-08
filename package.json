@@ -10,8 +10,7 @@
     "each:document": "lerna run --parallel --no-bail document",
 		"each:test": "lerna run --stream --no-bail test -- --test-port=0",
 		"each:lint:js": "lerna run --stream --parallel --no-bail lint:js",
-		"each:cleanup": "lerna exec -- rm -rf ./dist ./coverage",
-		"preversion": "lerna run --stream test -- --test-port=0 && lerna run document"
+		"each:cleanup": "lerna exec -- rm -rf ./dist ./coverage"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
