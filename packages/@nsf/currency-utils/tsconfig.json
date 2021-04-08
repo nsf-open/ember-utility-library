@@ -42,10 +42,7 @@
       ],
       "*": [
         "types/*"
-      ],
-			"@nsf/general-utils": [
-				"../general-utils/addon/"
-			]
+      ]
 		}
   },
   "include": [
