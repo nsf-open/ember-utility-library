@@ -12,7 +12,6 @@
 
 - [fromUSD](README.md#fromusd)
 - [fromUSDFormat](README.md#fromusdformat)
-- [isNumeric](README.md#isnumeric)
 - [toUSD](README.md#tousd)
 - [toUSDFormat](README.md#tousdformat)
 
@@ -32,7 +31,7 @@ Name | Type | Description |
 `cents`? | *boolean* | If true, cents will be included to the typical hundredth precision.   |
 `currencySymbol`? | *boolean* | If true, the USD currency symbol ($) will be prefixed.   |
 
-Defined in: formatters.ts:2
+Defined in: formatters.ts:4
 
 ## Functions
 
@@ -84,25 +83,7 @@ Name | Type |
 
 **Returns:** *number*
 
-Defined in: formatters.ts:85
-
-___
-
-### isNumeric
-
-▸ **isNumeric**(`value`: *any*): value is number
-
-Checks whether the argument is a finite number.
-
-#### Parameters:
-
-Name | Type |
-:------ | :------ |
-`value` | *any* |
-
-**Returns:** value is number
-
-Defined in: formatters.ts:17
+Defined in: formatters.ts:79
 
 ___
 
@@ -163,4 +144,4 @@ Name | Type | Default value |
 
 **Returns:** T \| *string*
 
-Defined in: formatters.ts:31
+Defined in: formatters.ts:25
