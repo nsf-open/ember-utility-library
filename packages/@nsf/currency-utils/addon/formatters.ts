@@ -1,3 +1,5 @@
+import { isNumeric } from '@nsf/general-utils';
+
 /** Configuration options for the toUSD() formatter. */
 export type ToFormatOptions = {
 	/** If true, cents will be included to the typical hundredth precision.  */
@@ -8,14 +10,6 @@ export type ToFormatOptions = {
 
 	/** If true, negative values will be enclosed in parenthesis. */
 	accountingFormat?: boolean;
-}
-
-
-/**
- * Checks whether the argument is a finite number.
- */
-export function isNumeric(value: any): value is number {
-	return !isNaN(parseFloat(value)) && isFinite(value);
 }
 
 
