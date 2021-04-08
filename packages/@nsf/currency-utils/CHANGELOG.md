@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/currency-utils@0.1.0...@nsf/currency-utils@1.0.0) (2021-04-08)
+
+**Note:** Version bump only for package @nsf/currency-utils
+
+
+
+
+
 # 0.1.0 (2021-04-07)
 
 

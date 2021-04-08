@@ -1,6 +1,6 @@
 {
   "name": "@nsf/datetime-utils",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Date and time parsing + formatting utilities using MomentJS.",
   "keywords": [
     "ember-addon"
@@ -20,8 +20,8 @@
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean",
     "document": "typedoc --tsconfig ./tsconfig.json",
-		"preversion": "yarn run test",
-		"version": "yarn run document"
+    "preversion": "yarn run test",
+    "version": "yarn run document"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.3",
