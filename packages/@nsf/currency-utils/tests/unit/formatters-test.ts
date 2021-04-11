@@ -10,8 +10,8 @@ module('Unit | Utility | formatters', function(hooks) {
 	test('toUSD()', function(assert) {
 		assert.strictEqual(toUSDFormat(null), null);
 		assert.strictEqual(toUSDFormat('ab'), 'ab');
-		assert.strictEqual(toUSDFormat(Number.POSITIVE_INFINITY), Number.POSITIVE_INFINITY);
 
+		assert.strictEqual(toUSDFormat(Number.POSITIVE_INFINITY), "$∞");
 		assert.strictEqual(toUSDFormat(123), '$123');
 		assert.strictEqual(toUSDFormat(123, true), '$123.00');
 		assert.strictEqual(toUSDFormat(123, { cents: false }), '$123');

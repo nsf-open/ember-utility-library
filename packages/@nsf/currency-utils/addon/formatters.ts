@@ -1,4 +1,3 @@
-import { isNumeric } from '@nsf/general-utils';
 
 /** Configuration options for the toUSD() formatter. */
 export type ToFormatOptions = {
@@ -22,9 +21,12 @@ export type ToFormatOptions = {
  * toUSD(12345, { cents: true }); // => "$12,345.00"
  * ```
  */
-export function toUSDFormat<T>(value: T, showCentsOrOptions: ToFormatOptions | boolean = false): T | string {
-	if (!isNumeric(value)) {
-		return value;
+export function toUSDFormat<T>(
+	value: T,
+	showCentsOrOptions: ToFormatOptions | boolean = false
+): T extends number ? string : T {
+	if (typeof value !== 'number') {
+		return value as any;
 	}
 
 	const defaultOpts = {
@@ -61,7 +63,7 @@ export function toUSDFormat<T>(value: T, showCentsOrOptions: ToFormatOptions | b
 		formattedResult = `(${ formattedResult.replace('-', '') })`;
 	}
 
-	return formattedResult;
+	return formattedResult as any;
 }
 
 
