@@ -1,5 +1,3 @@
-@nsf/general-utils
-
 # @nsf/general-utils
 
 ## Table of contents
@@ -31,8 +29,6 @@
 Javascript primitive types.
 Also see: https://developer.mozilla.org/en-US/docs/Glossary/Primitive
 
-Defined in: objects.ts:5
-
 ## Functions
 
 ### escapeRegExp
@@ -55,8 +51,6 @@ Name | Type |
 
 **Returns:** *string* \| S
 
-Defined in: regex.ts:4
-
 ___
 
 ### hasProperty
@@ -73,8 +67,6 @@ Name | Type |
 `val` | *string* \| *number* \| *symbol* |
 
 **Returns:** val is string \| number \| symbol
-
-Defined in: objects.ts:19
 
 ___
 
@@ -103,8 +95,6 @@ Name | Type | Default value |
 
 **Returns:** *string*
 
-Defined in: strings.ts:60
-
 ___
 
 ### intersection
@@ -129,8 +119,6 @@ Name | Type |
 
 **Returns:** T[]
 
-Defined in: arrays.ts:5
-
 ___
 
 ### isInteger
@@ -146,8 +134,6 @@ Name | Type |
 `value` | *any* |
 
 **Returns:** value is number
-
-Defined in: numbers.ts:13
 
 ___
 
@@ -166,8 +152,6 @@ Name | Type |
 
 **Returns:** value is number
 
-Defined in: numbers.ts:5
-
 ___
 
 ### isObject
@@ -183,8 +167,6 @@ Name | Type |
 `value` | *any* |
 
 **Returns:** value is object
-
-Defined in: objects.ts:11
 
 ___
 
@@ -202,8 +184,6 @@ Name | Type |
 
 **Returns:** value is PrimitiveValue
 
-Defined in: objects.ts:27
-
 ___
 
 ### isPromiseLike
@@ -220,8 +200,6 @@ Name | Type |
 
 **Returns:** obj is PromiseLike<unknown\>
 
-Defined in: objects.ts:35
-
 ___
 
 ### trim
@@ -237,8 +215,6 @@ Name | Type |
 `value` | *any* |
 
 **Returns:** *string*
-
-Defined in: strings.ts:7
 
 ___
 
@@ -257,5 +233,3 @@ Name | Type | Default value | Description |
 `postfix` | *string* | ' ...' | - |
 
 **Returns:** *string*
-
-Defined in: strings.ts:22
