@@ -20,8 +20,7 @@
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean",
     "document": "typedoc --tsconfig ./tsconfig.json",
-    "preversion": "yarn run test",
-    "version": "yarn run document"
+    "preversion": "yarn run test"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.3",
