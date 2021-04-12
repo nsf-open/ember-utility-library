@@ -58,8 +58,9 @@
 		"out": "docs",
 		"readme": "none",
 		"excludeExternals": true,
-		"disableSources": false,
+		"disableSources": true,
 		"namedAnchors": true,
+		"hideBreadcrumbs": true,
 		"entryPoints": [
 			"addon/index.ts",
 		]

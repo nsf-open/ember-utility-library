@@ -1,5 +1,3 @@
-@nsf/currency-utils
-
 # @nsf/currency-utils
 
 ## Table of contents
@@ -31,8 +29,6 @@ Name | Type | Description |
 `cents`? | *boolean* | If true, cents will be included to the typical hundredth precision.   |
 `currencySymbol`? | *boolean* | If true, the USD currency symbol ($) will be prefixed.   |
 
-Defined in: formatters.ts:4
-
 ## Functions
 
 ### fromUSD
@@ -57,8 +53,6 @@ Name | Type |
 
 **Returns:** *default*<number, number\>
 
-Defined in: computed-macros.ts:19
-
 ___
 
 ### fromUSDFormat
@@ -82,8 +76,6 @@ Name | Type |
 `value` | *any* |
 
 **Returns:** *number*
-
-Defined in: formatters.ts:79
 
 ___
 
@@ -113,15 +105,14 @@ Name | Type | Default value |
 
 **Returns:** *default*<any, any\>
 
-Defined in: computed-macros.ts:40
-
 ___
 
 ### toUSDFormat
 
-▸ **toUSDFormat**<T\>(`value`: T, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): T \| *string*
+▸ **toUSDFormat**<T\>(`value`: T, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): T *extends* *string* \| *number* ? *string* : T
 
-Converts a numerical value to USD currency.
+Converts a numerical value to USD currency. Both numbers and parsable strings
+are supported.
 
 ```javascript
 toUSD(12345); // => "$12,345"
@@ -142,6 +133,4 @@ Name | Type | Default value |
 `value` | T | - |
 `showCentsOrOptions` | [*ToFormatOptions*](README.md#toformatoptions) \| *boolean* | false |
 
-**Returns:** T \| *string*
-
-Defined in: formatters.ts:25
+**Returns:** T *extends* *string* \| *number* ? *string* : T
