@@ -1,6 +1,6 @@
 {
   "name": "@nsf/contact-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for phone numbers, email, physical addresses, and more.",
   "keywords": [
     "ember-addon"
@@ -92,7 +92,7 @@
     "configPath": "tests/dummy/config"
   },
   "publishConfig": {
-		"access": "public",
+    "access": "public",
     "registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
   }
 }

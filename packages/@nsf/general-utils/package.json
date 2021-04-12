@@ -1,6 +1,6 @@
 {
   "name": "@nsf/general-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "keywords": [
     "ember-addon"
@@ -92,7 +92,7 @@
     "configPath": "tests/dummy/config"
   },
   "publishConfig": {
-		"access": "public",
+    "access": "public",
     "registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
   }
 }

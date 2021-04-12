@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/currency-utils@1.0.1...@nsf/currency-utils@1.1.0) (2021-04-12)
+
+
+### Bug Fixes
+
+* Remove outside path to keep TS from crashing ([ed3bed1](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/ed3bed13cfeb73bc0cac5c32ebc7a5d3187be8e4))
+
+
+### Features
+
+*  improved formatter typings ([7f56589](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/7f565893d856f9ee9ba886ed567f739e1fc9b17d))
+
+
+
+
+
 ## [1.0.1](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/currency-utils@1.0.0...@nsf/currency-utils@1.0.1) (2021-04-08)
 
 **Note:** Version bump only for package @nsf/currency-utils

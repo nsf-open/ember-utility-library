@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/general-utils@1.0.0...@nsf/general-utils@1.1.0) (2021-04-12)
+
+
+### Features
+
+* guid-for Ember template helper ([a1995ff](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/a1995ffaa9e7e9d318c79e841429b508df7aebfb))
+* is-primitive Ember template helper ([ff9610b](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/ff9610ba14e6152df66b13dfb2de731c561aa267))
+
+
+
+
+
 # 1.0.0 (2021-04-08)
 
 
