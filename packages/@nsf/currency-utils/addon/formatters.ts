@@ -13,7 +13,8 @@ export type ToFormatOptions = {
 
 
 /**
- * Converts a numerical value to USD currency.
+ * Converts a numerical value to USD currency. Both numbers and parsable strings
+ * are supported.
  *
  * ```javascript
  * toUSD(12345); // => "$12,345"
@@ -24,8 +25,10 @@ export type ToFormatOptions = {
 export function toUSDFormat<T>(
 	value: T,
 	showCentsOrOptions: ToFormatOptions | boolean = false
-): T extends number ? string : T {
-	if (typeof value !== 'number') {
+): T extends (string | number) ? string : T {
+	const parsedValue = typeof value === 'number' ? value : parseFloat(value as any);
+
+	if (isNaN(parsedValue)) {
 		return value as any;
 	}
 
@@ -53,13 +56,14 @@ export function toUSDFormat<T>(
 		formatterOpts.maximumFractionDigits = 0;
 	}
 
-	let formattedResult = new Intl.NumberFormat('en-US', formatterOpts).format(value);
+
+	let formattedResult = new Intl.NumberFormat('en-US', formatterOpts).format(parsedValue);
 
 	if (!opts.currencySymbol) {
 		formattedResult = formattedResult.replace('$', '');
 	}
 
-	if (opts.accountingFormat && value < 0) {
+	if (opts.accountingFormat && parsedValue < 0) {
 		formattedResult = `(${ formattedResult.replace('-', '') })`;
 	}
 
