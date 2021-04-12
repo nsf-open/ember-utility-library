@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/currency-utils@1.1.0...@nsf/currency-utils@1.1.1) (2021-04-12)
+
+
+### Bug Fixes
+
+* toUSDFormat is more lenient by allowing parsable strings as well as numbers ([1d0a01a](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/1d0a01aa1ea8ca3d444cbbc2aa556c025ac7d3ae))
+
+
+
+
+
 # [1.1.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/currency-utils@1.0.1...@nsf/currency-utils@1.1.0) (2021-04-12)
 
 
