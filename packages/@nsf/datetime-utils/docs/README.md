@@ -89,7 +89,7 @@ Defined in: constants.ts:9
 
 ### bigEndianDateString
 
-▸ **bigEndianDateString**(`dependantKey`: *string*, `defaultValue?`: *string*, `options?`: ParseOptions): *default*<string, string\>
+▸ **bigEndianDateString**(`dependantKey`: *string*, `defaultValue?`: *any*, `options?`: ParseOptions): *default*<any, any\>
 
 Exposes the `bigEndianDateString` formatter as an Ember computed decorator to format
 a date-like value as "YEAR-MONTH-DAY".
@@ -106,10 +106,10 @@ public formattedDate!: string; // => '1970-10-25'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `dependantKey` | *string* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *default*<string, string\>
+**Returns:** *default*<any, any\>
 
 Defined in: computed-macros.ts:77
 
@@ -117,7 +117,7 @@ ___
 
 ### middleEndianDateString
 
-▸ **middleEndianDateString**(`dependantKey`: *string*, `defaultValue?`: *string*, `options?`: ParseOptions): *default*<string, string\>
+▸ **middleEndianDateString**(`dependantKey`: *string*, `defaultValue?`: *any*, `options?`: ParseOptions): *default*<any, any\>
 
 Exposes the `toMiddleEndianDateString` formatter as an Ember computed decorator to format
 a date-like value as "MONTH/DAY/YEAR".
@@ -134,10 +134,10 @@ public formattedDate!: string; // => '10/25/1970'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `dependantKey` | *string* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *default*<string, string\>
+**Returns:** *default*<any, any\>
 
 Defined in: computed-macros.ts:23
 
@@ -145,7 +145,7 @@ ___
 
 ### middleEndianDateTimeString
 
-▸ **middleEndianDateTimeString**(`dependantKey`: *string*, `defaultValue?`: *string*, `options?`: ParseOptions): *default*<string, string\>
+▸ **middleEndianDateTimeString**(`dependantKey`: *string*, `defaultValue?`: *any*, `options?`: ParseOptions): *default*<any, any\>
 
 Exposes the `middleEndianDateTimeString` formatter as an Ember computed decorator to format
 a date-like value as "MONTH/DAY/YEAR HOUR:MINUTE MERIDIEM".
@@ -162,10 +162,10 @@ public formattedDateTime!: string; // => '10/25/1970 1:10 PM'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `dependantKey` | *string* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *default*<string, string\>
+**Returns:** *default*<any, any\>
 
 Defined in: computed-macros.ts:59
 
@@ -173,7 +173,7 @@ ___
 
 ### middleEndianTimeString
 
-▸ **middleEndianTimeString**(`dependantKey`: *string*, `defaultValue?`: *string*, `options?`: ParseOptions): *default*<string, string\>
+▸ **middleEndianTimeString**(`dependantKey`: *string*, `defaultValue?`: *any*, `options?`: ParseOptions): *default*<any, any\>
 
 Exposes the `middleEndianTimeString` formatter as an Ember computed decorator to format
 a date-like value as "HOUR:MINUTE MERIDIEM".
@@ -190,10 +190,10 @@ public formattedTime!: string; // => '1:10 PM'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `dependantKey` | *string* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *default*<string, string\>
+**Returns:** *default*<any, any\>
 
 Defined in: computed-macros.ts:41
 
@@ -221,7 +221,7 @@ ___
 
 ### toBigEndianDateString
 
-▸ **toBigEndianDateString**(`value`: *any*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toBigEndianDateString**(`value`: *any*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Formats a date-like value as "YEAR-MONTH-DAY".
 
@@ -234,10 +234,10 @@ toBigEndianDateString(new Date(1970, 9, 25, 13, 10, 50)); // => '1970-10-25'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:73
 
@@ -245,7 +245,7 @@ ___
 
 ### toBigEndianDateTimeString
 
-▸ **toBigEndianDateTimeString**(`value`: *any*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toBigEndianDateTimeString**(`value`: *any*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Formats a date-like value as "YEAR-MONTH-DAY HOUR:MINUTE:SECOND.MILLISECOND[TIMEZONE]".
 
@@ -258,10 +258,10 @@ toBigEndianDateTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '1970-10-25 
 Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:97
 
@@ -269,7 +269,7 @@ ___
 
 ### toBigEndianTimeString
 
-▸ **toBigEndianTimeString**(`value`: *any*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toBigEndianTimeString**(`value`: *any*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Formats a date-like value as "HOUR:MINUTE:SECOND.MILLISECOND[TIMEZONE]".
 
@@ -282,10 +282,10 @@ toBigEndianTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '13:10:50.000-05
 Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:85
 
@@ -293,7 +293,7 @@ ___
 
 ### toFormattedString
 
-▸ **toFormattedString**(`value`: *any*, `formatOut`: *string*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toFormattedString**(`value`: *any*, `formatOut`: *string*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Given a value that can be converted into a valid MomentJS instance, format
 it with the provided mask. If it cannot be converted, a default value
@@ -305,10 +305,10 @@ Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
 `formatOut` | *string* | - |
-`defaultValue` | *string* | '' |
+`defaultValue` | *any* | '' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:21
 
@@ -316,7 +316,7 @@ ___
 
 ### toMiddleEndianDateString
 
-▸ **toMiddleEndianDateString**(`value`: *any*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toMiddleEndianDateString**(`value`: *any*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Formats a date-like value as "MONTH/DAY/YEAR".
 
@@ -329,10 +329,10 @@ toMiddleEndianDateString(new Date(1970, 9, 25, 13, 10, 50)); // => '10/25/1970'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:37
 
@@ -340,7 +340,7 @@ ___
 
 ### toMiddleEndianDateTimeString
 
-▸ **toMiddleEndianDateTimeString**(`value`: *any*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toMiddleEndianDateTimeString**(`value`: *any*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Formats a date-like value as "MONTH/DAY/YEAR HOUR:MINUTE MERIDIEM".
 
@@ -353,10 +353,10 @@ toMiddleEndianDateTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '10/25/19
 Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:61
 
@@ -364,7 +364,7 @@ ___
 
 ### toMiddleEndianTimeString
 
-▸ **toMiddleEndianTimeString**(`value`: *any*, `defaultValue?`: *string*, `options?`: ParseOptions): *string*
+▸ **toMiddleEndianTimeString**(`value`: *any*, `defaultValue?`: *any*, `options?`: ParseOptions): *any*
 
 Formats a date-like value as "HOUR:MINUTE MERIDIEM".
 
@@ -377,9 +377,9 @@ toMiddleEndianTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '1:10 PM'
 Name | Type | Default value |
 :------ | :------ | :------ |
 `value` | *any* | - |
-`defaultValue` | *string* | 'None' |
+`defaultValue` | *any* | 'None' |
 `options` | ParseOptions | {} |
 
-**Returns:** *string*
+**Returns:** *any*
 
 Defined in: formatters.ts:49
