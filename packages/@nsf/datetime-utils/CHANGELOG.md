@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/datetime-utils@1.1.0...@nsf/datetime-utils@1.2.0) (2021-05-07)
+
+
+### Features
+
+* added format mask "MM/DD/YYYY HH:mm:ss" ([ac34e13](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/ac34e13f6334a940bccc70e5f40c03ccaf669d7f))
+
+
+
+
+
 # [1.1.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/datetime-utils@1.0.1...@nsf/datetime-utils@1.1.0) (2021-05-07)
 
 
