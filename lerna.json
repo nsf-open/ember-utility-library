@@ -1,6 +1,7 @@
 {
 	"packages": ["packages/@nsf/*"],
 	"version": "independent",
+	"granularPathspec": false,
 	"npmClient": "yarn",
 	"useWorkspaces": true,
 	"command": {
