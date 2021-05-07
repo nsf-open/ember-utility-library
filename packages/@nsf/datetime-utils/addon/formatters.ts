@@ -18,7 +18,7 @@ import {
  * it with the provided mask. If it cannot be converted, a default value
  * (usually a string) is returned.
  */
-export function toFormattedString(value: any, formatOut: string, defaultValue = '', options: ParseOptions = {}) {
+export function toFormattedString(value: any, formatOut: string, defaultValue: any = '', options: ParseOptions = {}) {
 	const date = parser(value, options);
 
 	return date
@@ -34,7 +34,7 @@ export function toFormattedString(value: any, formatOut: string, defaultValue = 
  * toMiddleEndianDateString(new Date(1970, 9, 25, 13, 10, 50)); // => '10/25/1970'
  * ```
  */
-export function toMiddleEndianDateString(value: any, defaultValue = 'None', options: ParseOptions = {}) {
+export function toMiddleEndianDateString(value: any, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return toFormattedString(value, MIDDLE_ENDIAN_DATE_FORMAT, defaultValue, options);
 }
 
@@ -46,7 +46,7 @@ export function toMiddleEndianDateString(value: any, defaultValue = 'None', opti
  * toMiddleEndianTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '1:10 PM'
  * ```
  */
-export function toMiddleEndianTimeString(value: any, defaultValue = 'None', options: ParseOptions = {}) {
+export function toMiddleEndianTimeString(value: any, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return toFormattedString(value, MIDDLE_ENDIAN_TIME_FORMAT, defaultValue, options);
 }
 
@@ -58,7 +58,7 @@ export function toMiddleEndianTimeString(value: any, defaultValue = 'None', opti
  * toMiddleEndianDateTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '10/25/1970 1:10 PM'
  * ```
  */
-export function toMiddleEndianDateTimeString(value: any, defaultValue = 'None', options: ParseOptions = {}) {
+export function toMiddleEndianDateTimeString(value: any, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return toFormattedString(value, MIDDLE_ENDIAN_DATETIME_FORMAT, defaultValue, options);
 }
 
@@ -70,7 +70,7 @@ export function toMiddleEndianDateTimeString(value: any, defaultValue = 'None', 
  * toBigEndianDateString(new Date(1970, 9, 25, 13, 10, 50)); // => '1970-10-25'
  * ```
  */
-export function toBigEndianDateString(value: any, defaultValue = 'None', options: ParseOptions = {}) {
+export function toBigEndianDateString(value: any, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return toFormattedString(value, BIG_ENDIAN_DATE_FORMAT, defaultValue, options);
 }
 
@@ -82,7 +82,7 @@ export function toBigEndianDateString(value: any, defaultValue = 'None', options
  * toBigEndianTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '13:10:50.000-05:00' (assuming EST)
  * ```
  */
-export function toBigEndianTimeString(value: any, defaultValue = 'None', options: ParseOptions = {}) {
+export function toBigEndianTimeString(value: any, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return toFormattedString(value, BIG_ENDIAN_TIME_FORMAT, defaultValue, options);
 }
 
@@ -94,6 +94,6 @@ export function toBigEndianTimeString(value: any, defaultValue = 'None', options
  * toBigEndianDateTimeString(new Date(1970, 9, 25, 13, 10, 50)); // => '1970-10-25 13:10:50.000-05:00' (assuming EST)
  * ```
  */
-export function toBigEndianDateTimeString(value: any, defaultValue = 'None', options: ParseOptions = {}) {
+export function toBigEndianDateTimeString(value: any, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return toFormattedString(value, BIG_ENDIAN_DATETIME_FORMAT, defaultValue, options);
 }

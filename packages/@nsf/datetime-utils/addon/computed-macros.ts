@@ -20,7 +20,7 @@ import {
  * public formattedDate!: string; // => '10/25/1970'
  * ```
  */
-export function middleEndianDateString(dependantKey: string, defaultValue = 'None', options: ParseOptions = {}) {
+export function middleEndianDateString(dependantKey: string, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return computed(dependantKey, function computedMiddleEndianDateString() {
 		return toMiddleEndianDateString(get(this, dependantKey), defaultValue, options);
 	});
@@ -38,7 +38,7 @@ export function middleEndianDateString(dependantKey: string, defaultValue = 'Non
  * public formattedTime!: string; // => '1:10 PM'
  * ```
  */
-export function middleEndianTimeString(dependantKey: string, defaultValue = 'None', options: ParseOptions = {}) {
+export function middleEndianTimeString(dependantKey: string, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return computed(dependantKey, function computedMiddleEndianTimeString() {
 		return toMiddleEndianTimeString(get(this, dependantKey), defaultValue, options);
 	});
@@ -56,7 +56,7 @@ export function middleEndianTimeString(dependantKey: string, defaultValue = 'Non
  * public formattedDateTime!: string; // => '10/25/1970 1:10 PM'
  * ```
  */
-export function middleEndianDateTimeString(dependantKey: string, defaultValue = 'None', options: ParseOptions = {}) {
+export function middleEndianDateTimeString(dependantKey: string, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return computed(dependantKey, function computedMiddleEndianDateTimeString() {
 		return toMiddleEndianDateTimeString(get(this, dependantKey), defaultValue, options);
 	});
@@ -74,7 +74,7 @@ export function middleEndianDateTimeString(dependantKey: string, defaultValue = 
  * public formattedDate!: string; // => '1970-10-25'
  * ```
  */
-export function bigEndianDateString(dependantKey: string, defaultValue = 'None', options: ParseOptions = {}) {
+export function bigEndianDateString(dependantKey: string, defaultValue: any = 'None', options: ParseOptions = {}) {
 	return computed(dependantKey, function computedBigEndianDateString() {
 		return toBigEndianDateString(get(this, dependantKey), defaultValue, options);
 	});
