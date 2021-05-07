@@ -80,6 +80,12 @@ module('Unit | Utility | parseDateTime()', function(hooks) {
 			parseDateTime('1986-10-25T10:45:00.123+05:00')?.getTime(),
 			'YYYY-MM-DD[T]HH:mm:ss.SSSZZ'
 		);
+
+		assert.strictEqual(
+		  moment(parseDateTime('01/02/3000 08:31:14')).format('MM/DD/YYYY'),
+      '01/02/3000',
+      'MM/DD/YYYY HH:mm:ss'
+    );
 	});
 
 
