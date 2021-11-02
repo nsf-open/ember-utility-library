@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/general-utils@1.1.0...@nsf/general-utils@1.1.1) (2021-11-02)
+
+
+### Bug Fixes
+
+* remove invalid MomentJS import that would cause build to fail if the library wasn't available ([0863df3](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/0863df3e61a6e5859ba38f6e13d2854dc4f14d88))
+
+
+
+
+
 # [1.1.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/general-utils@1.0.0...@nsf/general-utils@1.1.0) (2021-04-12)
 
 
