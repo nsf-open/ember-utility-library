@@ -8,7 +8,7 @@ export type PrimitiveValue = string | number | boolean | symbol | undefined | nu
 /**
  * Tests whether the argument is a _plain old javascript object_ (POJO) or class instance.
  */
-export function isObject(value: any): value is object {
+export function isObject(value: any): value is Record<string, unknown> {
 	return Object.prototype.toString.call(value) === '[object Object]';
 }
 
