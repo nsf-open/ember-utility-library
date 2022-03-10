@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/general-utils@1.1.1...@nsf/general-utils@1.2.0) (2022-03-10)
+
+
+### Features
+
+* loosen isObject type guard to Record<string, unknown> ([d8a1024](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/commits/d8a1024c34620ee9b340953f7d4ab14a8130a43c))
+
+
+
+
+
 ## [1.1.1](https://bitbucket.nsf.gov/scm/nsf-fe/utility-library/compare/@nsf/general-utils@1.1.0...@nsf/general-utils@1.1.1) (2021-11-02)
 
 

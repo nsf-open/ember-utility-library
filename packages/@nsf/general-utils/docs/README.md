@@ -156,7 +156,7 @@ ___
 
 ### isObject
 
-▸ **isObject**(`value`: *any*): value is object
+▸ **isObject**(`value`: *any*): value is Record<string, unknown\>
 
 Tests whether the argument is a _plain old javascript object_ (POJO) or class instance.
 
@@ -166,7 +166,7 @@ Name | Type |
 :------ | :------ |
 `value` | *any* |
 
-**Returns:** value is object
+**Returns:** value is Record<string, unknown\>
 
 ___
 
