@@ -1,13 +1,10 @@
 {
-	"packages": ["packages/@nsf/*"],
+	"packages": ["packages/@nsf0open/*"],
 	"version": "independent",
 	"granularPathspec": false,
 	"npmClient": "yarn",
 	"useWorkspaces": true,
 	"command": {
-		"publish": {
-			"registry": "https://dis-nexus.nsf.gov:8443/nexus/repository/npm-internal"
-		},
 		"version": {
 			"conventionalCommits": true,
 			"allowBranch": "develop",

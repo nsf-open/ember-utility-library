@@ -1,7 +1,5 @@
-@nsf/utility-library
+@nsf-open/ember-utility-library
 ===================================================
-
-[![Coverage](https://sonarqube.nsf.gov/api/project_badges/measure?project=nsf-js-utility-library&metric=coverage)](https://sonarqube.nsf.gov/dashboard?id=nsf-js-utility-library)
 
 The NSF Utility Library is a collection of packages that provide common utils and helper methods used throughout most 
 other NSF web app projects.
@@ -10,11 +8,11 @@ other NSF web app projects.
 API
 ---------------------------------------------------
 
-- [@nsf/contact-utils](packages/@nsf/contact-utils/docs/README.md)
-- [@nsf/currency-utils](packages/@nsf/currency-utils/docs/README.md)
-- [@nsf/datetime-utils](packages/@nsf/datetime-utils/docs/README.md)
-- [@nsf/general-utils](packages/@nsf/general-utils/docs/README.md)
-- [@nsf/username-utils](packages/@nsf/username-utils/docs/README.md)
+- [@nsf-open/ember-contact-utils](packages/@nsf-open/ember-contact-utils/docs/README.md)
+- [@nsf-open/ember-currency-utils](packages/@nsf-open/ember-currency-utils/docs/README.md)
+- [@nsf-open/ember-datetime-utils](packages/@nsf-open/ember-datetime-utils/docs/README.md)
+- [@nsf-open/ember-general-utils](packages/@nsf-open/ember-general-utils/docs/README.md)
+- [@nsf-open/ember-username-utils](packages/@nsf-open/ember-username-utils/docs/README.md)
 
 
 Commits

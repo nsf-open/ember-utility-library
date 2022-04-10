@@ -1,10 +1,10 @@
 {
-  "name": "@nsf/utility-library",
+  "name": "@nsf-open/ember-utility-library-workspace",
   "author": "National Science Foundation",
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/@nsf/*"
+    "packages/@nsf-open/*"
   ],
   "scripts": {
     "each:document": "lerna run --parallel --no-bail document",
