@@ -14,13 +14,13 @@
     "build": "ember build",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test",
+    "test": "npm run lint:js && ember test",
     "test:all": "ember try:each",
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean",
     "document": "typedoc --tsconfig ./tsconfig.json",
-    "preversion": "yarn run test",
-    "version": "yarn run document"
+    "preversion": "npm test",
+    "version": "npm run document"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.11",
