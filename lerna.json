@@ -1,5 +1,5 @@
 {
-	"packages": ["packages/@nsf0open/*"],
+	"packages": ["packages/@nsf-open/*"],
 	"version": "independent",
 	"granularPathspec": false,
 	"npmClient": "yarn",
