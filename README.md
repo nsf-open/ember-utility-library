@@ -1,8 +1,11 @@
 @nsf-open/ember-utility-library
 ===================================================
 
-The NSF Utility Library is a collection of packages that provide common utils and helper methods used throughout most 
-other NSF web app projects.
+The NSF Utility Library is a collection of packages that provide common utility/helper methods for Ember based 
+projects at the National Science Foundation.
+
+A monorepo for such simple-looking packages may seem like overkill, but this also serves as a live testbed for
+new tools and techniques.
 
 
 API
