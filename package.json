@@ -16,5 +16,9 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "volta": {
+    "node": "16.15.0",
+    "npm": "8.8.0"
+  }
 }
