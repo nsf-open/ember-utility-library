@@ -2915,14 +2915,14 @@
     "@types/ember__object" "^3"
     "@types/jquery" "*"
 
-"@types/ember__controller@*", "@types/ember__controller@3.16.4":
+"@types/ember__controller@*":
   version "3.16.4"
   resolved "https://registry.yarnpkg.com/@types/ember__controller/-/ember__controller-3.16.4.tgz#2216df95c7466635e8a615e26318cca41e502b53"
   integrity sha512-XkRBVmf6YM+s5tli4qnlGcg5VpbrlQ/EsfVdM20V5JfO4DzlmTlTUb/F1i0CTsU9DxFLhZSzGn9nXyOBkHMf1Q==
   dependencies:
     "@types/ember__object" "*"
 
-"@types/ember__controller@^3":
+"@types/ember__controller@3.16.7", "@types/ember__controller@^3":
   version "3.16.7"
   resolved "https://registry.yarnpkg.com/@types/ember__controller/-/ember__controller-3.16.7.tgz#e45d5233d7cee8a5388b401081babc30cb65e960"
   integrity sha512-oGyjQPJ5PRY10TqJuxDo4nu59sCO6/YmeY4tsItI5RbDj7hmzd9ZOxKeOI/qrQJosMdHe5cd3RP1/zZOe0Xn3Q==
