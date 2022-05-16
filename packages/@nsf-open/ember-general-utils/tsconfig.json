@@ -20,6 +20,7 @@
     "baseUrl": ".",
     "module": "es6",
     "experimentalDecorators": true,
+    "skipLibCheck": true,
     "paths": {
       "dummy/tests/*": [
         "tests/*"
@@ -53,16 +54,16 @@
     "test-support/**/*",
     "addon-test-support/**/*"
   ],
-	"typedocOptions": {
-		"name": "@nsf-open/ember-general-utils",
-		"out": "docs",
-		"readme": "none",
-		"excludeExternals": true,
-		"disableSources": true,
-		"namedAnchors": true,
-		"hideBreadcrumbs": true,
-		"entryPoints": [
-			"addon/index.ts"
-		]
-	}
+  "typedocOptions": {
+    "name": "@nsf-open/ember-general-utils",
+    "out": "docs",
+    "readme": "none",
+    "excludeExternals": true,
+    "disableSources": true,
+    "namedAnchors": true,
+    "hideBreadcrumbs": true,
+    "entryPoints": [
+      "addon/index.ts"
+    ]
+  }
 }

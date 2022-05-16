@@ -20,6 +20,7 @@
     "baseUrl": ".",
     "module": "es6",
     "experimentalDecorators": true,
+    "skipLibCheck": true,
     "paths": {
       "dummy/tests/*": [
         "tests/*"
@@ -53,15 +54,15 @@
     "test-support/**/*",
     "addon-test-support/**/*"
   ],
-	"typedocOptions": {
-		"name": "@nsf-open/ember-contact-utils",
-		"out": "docs",
-		"readme": "none",
-		"excludeExternals": true,
-		"disableSources": false,
-		"namedAnchors": true,
-		"entryPoints": [
-			"addon/index.ts",
-		]
-	}
+  "typedocOptions": {
+    "name": "@nsf-open/ember-contact-utils",
+    "out": "docs",
+    "readme": "none",
+    "excludeExternals": true,
+    "disableSources": false,
+    "namedAnchors": true,
+    "entryPoints": [
+      "addon/index.ts",
+    ]
+  }
 }
