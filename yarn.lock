@@ -2929,7 +2929,7 @@
   resolved "https://registry.yarnpkg.com/@types/ember__error/-/ember__error-3.16.1.tgz#752d977f4ee35d4fa66bcfeebae6e85240fc62a6"
   integrity sha512-bnB58krc18B8qgSMsRBbrVbNb4msyb8pMzS9Yo3brw/bRjuPb1ONUrjieAVHeespXlXNJOusvvX/pji641iCPQ==
 
-"@types/ember__error@3.16.2", "@types/ember__error@^3":
+"@types/ember__error@3.16.2":
   version "3.16.2"
   resolved "https://registry.yarnpkg.com/@types/ember__error/-/ember__error-3.16.2.tgz#067df1808adcb6772f5198bac3145f77a978f656"
   integrity sha512-7t2fcIdKXg5sWR5HrmtoCeI/ItxDXO04AM8/AaHwEhh0BHUqq9aYpfT2KbDdQjHSzHQFhaR5YB2CJ6vm7lsiBg==
@@ -3015,7 +3015,7 @@
   resolved "https://registry.yarnpkg.com/@types/ember__template/-/ember__template-3.16.2.tgz#2aaff4f9856a6f5cb9c50268178e37055d043b95"
   integrity sha512-eIv2eyff3dhW7FMKbnl49xnuFm6igZ7IoG6BCI4kM3pqwauVXk6gU0e9pA56N/VKNJsVBe95t+QUxZYYBm3+WQ==
 
-"@types/ember__test-helpers@*":
+"@types/ember__test-helpers@*", "@types/ember__test-helpers@2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@types/ember__test-helpers/-/ember__test-helpers-2.6.1.tgz#2835bc60fd7daa93292d669fa9b61706836fe2e7"
   integrity sha512-d2RShuBSaBzp04nt8ad+mNE1F6rbIcIIud8WFUVQqGSUGHuZQUq1051Jza12ksCUnXduyE/J9UDjyZvNKOHeBQ==
@@ -3024,15 +3024,6 @@
     "@types/ember__application" "*"
     "@types/ember__error" "*"
     "@types/ember__test-helpers" "*"
-    "@types/htmlbars-inline-precompile" "*"
-
-"@types/ember__test-helpers@1.7.6":
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/@types/ember__test-helpers/-/ember__test-helpers-1.7.6.tgz#3f597a618196e6794881f24d223f0ddf6c416cf6"
-  integrity sha512-1i91ExfeqRcxcYqKfbAbw60PoB/GXhMrrt3YWhgvEguUlXjsmE8WyyHt2i5tIKOq5LVTRfFkpZ5ZSRliN/ueTw==
-  dependencies:
-    "@types/ember__application" "^3"
-    "@types/ember__error" "^3"
     "@types/htmlbars-inline-precompile" "*"
 
 "@types/ember__test@*":
