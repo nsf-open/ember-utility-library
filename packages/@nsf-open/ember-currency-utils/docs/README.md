@@ -15,25 +15,25 @@
 
 ## Type aliases
 
-### ToFormatOptions
+### <a id="toformatoptions" name="toformatoptions"></a> ToFormatOptions
 
-Ƭ **ToFormatOptions**: *object*
+Ƭ **ToFormatOptions**: `Object`
 
 Configuration options for the toUSD() formatter.
 
-#### Type declaration:
+#### Type declaration
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`accountingFormat`? | *boolean* | If true, negative values will be enclosed in parenthesis.   |
-`cents`? | *boolean* | If true, cents will be included to the typical hundredth precision.   |
-`currencySymbol`? | *boolean* | If true, the USD currency symbol ($) will be prefixed.   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `accountingFormat?` | `boolean` | If true, negative values will be enclosed in parenthesis. |
+| `cents?` | `boolean` | If true, cents will be included to the typical hundredth precision. |
+| `currencySymbol?` | `boolean` | If true, the USD currency symbol ($) will be prefixed. |
 
 ## Functions
 
-### fromUSD
+### <a id="fromusd" name="fromusd"></a> fromUSD
 
-▸ **fromUSD**(`dependantKey`: *string*): *default*<number, number\>
+▸ **fromUSD**(`dependantKey`): `default`<`number`, `number`\>
 
 Exposes the `fromUSDFormat` formatter as an Ember computed decorator that converts
 a formatted currency value to a float.
@@ -45,19 +45,21 @@ public totalCost = "$12,345.55"
 public numericCost!: number; // => 12345.55
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`dependantKey` | *string* |
+| Name | Type |
+| :------ | :------ |
+| `dependantKey` | `string` |
 
-**Returns:** *default*<number, number\>
+#### Returns
+
+`default`<`number`, `number`\>
 
 ___
 
-### fromUSDFormat
+### <a id="fromusdformat" name="fromusdformat"></a> fromUSDFormat
 
-▸ **fromUSDFormat**(`value`: *any*): *number*
+▸ **fromUSDFormat**(`value`): `number`
 
 Converts a formatted currency value to a float.
 
@@ -69,19 +71,21 @@ fromUSD("$12,345.55"); // => 12345.55
 fromUSD("(12,345.55)"); // => -12345.55
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
 
-**Returns:** *number*
+#### Returns
+
+`number`
 
 ___
 
-### toUSD
+### <a id="tousd" name="tousd"></a> toUSD
 
-▸ **toUSD**(`dependantKey`: *string*, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): *default*<any, any\>
+▸ **toUSD**(`dependantKey`, `showCentsOrOptions?`): `default`<`any`, `any`\>
 
 Exposes the `toUSDFormat` formatter as an Ember computed decorator that converts
 a numerical value to USD currency.
@@ -96,20 +100,22 @@ public formattedWhole!: string; // => "$12,345"
 public formattedDouble!: string; // => "$12,345.55"
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value |
-:------ | :------ | :------ |
-`dependantKey` | *string* | - |
-`showCentsOrOptions` | [*ToFormatOptions*](README.md#toformatoptions) \| *boolean* | false |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `dependantKey` | `string` | `undefined` |
+| `showCentsOrOptions` | `boolean` \| [`ToFormatOptions`](README.md#toformatoptions) | `false` |
 
-**Returns:** *default*<any, any\>
+#### Returns
+
+`default`<`any`, `any`\>
 
 ___
 
-### toUSDFormat
+### <a id="tousdformat" name="tousdformat"></a> toUSDFormat
 
-▸ **toUSDFormat**<T\>(`value`: T, `showCentsOrOptions?`: [*ToFormatOptions*](README.md#toformatoptions) \| *boolean*): T *extends* *string* \| *number* ? *string* : T
+▸ **toUSDFormat**<`T`\>(`value`, `showCentsOrOptions?`): `T` extends `string` \| `number` ? `string` : `T`
 
 Converts a numerical value to USD currency. Both numbers and parsable strings
 are supported.
@@ -120,17 +126,19 @@ toUSD(12345); // => "$12,345"
 toUSD(12345, { cents: true }); // => "$12,345.00"
 ```
 
-#### Type parameters:
+#### Type parameters
 
-Name |
-:------ |
-`T` |
+| Name |
+| :------ |
+| `T` |
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value |
-:------ | :------ | :------ |
-`value` | T | - |
-`showCentsOrOptions` | [*ToFormatOptions*](README.md#toformatoptions) \| *boolean* | false |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `value` | `T` | `undefined` |
+| `showCentsOrOptions` | `boolean` \| [`ToFormatOptions`](README.md#toformatoptions) | `false` |
 
-**Returns:** T *extends* *string* \| *number* ? *string* : T
+#### Returns
+
+`T` extends `string` \| `number` ? `string` : `T`

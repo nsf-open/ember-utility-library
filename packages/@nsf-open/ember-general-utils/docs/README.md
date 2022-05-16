@@ -22,57 +22,61 @@
 
 ## Type aliases
 
-### PrimitiveValue
+### <a id="primitivevalue" name="primitivevalue"></a> PrimitiveValue
 
-Ƭ **PrimitiveValue**: *string* \| *number* \| *boolean* \| *symbol* \| *undefined* \| *null* \| *bigint*
+Ƭ **PrimitiveValue**: `string` \| `number` \| `boolean` \| `symbol` \| `undefined` \| ``null`` \| `bigint`
 
 Javascript primitive types.
 Also see: https://developer.mozilla.org/en-US/docs/Glossary/Primitive
 
 ## Functions
 
-### escapeRegExp
+### <a id="escaperegexp" name="escaperegexp"></a> escapeRegExp
 
-▸ **escapeRegExp**<S\>(`string`: S): *string* \| S
+▸ **escapeRegExp**<`S`\>(`string`): `string` \| `S`
 
 Makes a string safe for use inside a regular expression by escaping regex special characters.
 
-#### Type parameters:
+#### Type parameters
 
-Name |
-:------ |
-`S` |
+| Name |
+| :------ |
+| `S` |
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`string` | S |
+| Name | Type |
+| :------ | :------ |
+| `string` | `S` |
 
-**Returns:** *string* \| S
+#### Returns
+
+`string` \| `S`
 
 ___
 
-### hasProperty
+### <a id="hasproperty" name="hasproperty"></a> hasProperty
 
-▸ **hasProperty**(`obj`: *any*, `val`: *string* \| *number* \| *symbol*): val is string \| number \| symbol
+▸ **hasProperty**(`obj`, `val`): val is string \| number \| symbol
 
 Tests whether an enumerable property with the provided name exists on the given object.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`obj` | *any* |
-`val` | *string* \| *number* \| *symbol* |
+| Name | Type |
+| :------ | :------ |
+| `obj` | `any` |
+| `val` | `string` \| `number` \| `symbol` |
 
-**Returns:** val is string \| number \| symbol
+#### Returns
+
+val is string \| number \| symbol
 
 ___
 
-### humanize
+### <a id="humanize" name="humanize"></a> humanize
 
-▸ **humanize**(`input`: *string*, `titleCase?`: *boolean*): *string*
+▸ **humanize**(`input`, `titleCase?`): `string`
 
 Takes a camelCased, snake_cased, or skeleton-cased string and puts in some nice
 looking spaces.
@@ -86,150 +90,168 @@ humanize('foo-bar-baz'); // "Foo bar baz"
 humanize('foo-bar-baz', true); // "Foo Bar Baz"
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value |
-:------ | :------ | :------ |
-`input` | *string* | - |
-`titleCase` | *boolean* | false |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `input` | `string` | `undefined` |
+| `titleCase` | `boolean` | `false` |
 
-**Returns:** *string*
+#### Returns
+
+`string`
 
 ___
 
-### intersection
+### <a id="intersection" name="intersection"></a> intersection
 
-▸ **intersection**<T\>(`arrayA`: T[], `arrayB`: T[]): T[]
+▸ **intersection**<`T`\>(`arrayA`, `arrayB`): `T`[]
 
 Given two array arguments, creates a new array that contains only the elements
 found in both arguments.
 
-#### Type parameters:
+#### Type parameters
 
-Name |
-:------ |
-`T` |
+| Name |
+| :------ |
+| `T` |
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`arrayA` | T[] |
-`arrayB` | T[] |
+| Name | Type |
+| :------ | :------ |
+| `arrayA` | `T`[] |
+| `arrayB` | `T`[] |
 
-**Returns:** T[]
+#### Returns
+
+`T`[]
 
 ___
 
-### isInteger
+### <a id="isinteger" name="isinteger"></a> isInteger
 
-▸ **isInteger**(`value`: *any*): value is number
+▸ **isInteger**(`value`): value is number
 
 Tests whether the argument is a whole number.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
 
-**Returns:** value is number
+#### Returns
+
+value is number
 
 ___
 
-### isNumeric
+### <a id="isnumeric" name="isnumeric"></a> isNumeric
 
-▸ **isNumeric**(`value`: *any*): value is number
+▸ **isNumeric**(`value`): value is number
 
 Tests whether the argument is a finite number. Strings that could be
 parsed as such are valid as well.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
 
-**Returns:** value is number
+#### Returns
+
+value is number
 
 ___
 
-### isObject
+### <a id="isobject" name="isobject"></a> isObject
 
-▸ **isObject**(`value`: *any*): value is Record<string, unknown\>
+▸ **isObject**(`value`): value is Record<string, unknown\>
 
 Tests whether the argument is a _plain old javascript object_ (POJO) or class instance.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
 
-**Returns:** value is Record<string, unknown\>
+#### Returns
+
+value is Record<string, unknown\>
 
 ___
 
-### isPrimitive
+### <a id="isprimitive" name="isprimitive"></a> isPrimitive
 
-▸ **isPrimitive**(`value`: *any*): value is PrimitiveValue
+▸ **isPrimitive**(`value`): value is PrimitiveValue
 
 Tests whether the argument is one of Javascript's primitive types.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
 
-**Returns:** value is PrimitiveValue
+#### Returns
+
+value is PrimitiveValue
 
 ___
 
-### isPromiseLike
+### <a id="ispromiselike" name="ispromiselike"></a> isPromiseLike
 
-▸ **isPromiseLike**(`obj`: *any*): obj is PromiseLike<unknown\>
+▸ **isPromiseLike**(`obj`): obj is PromiseLike<unknown\>
 
 Tests whether the argument is "then-able", e.g. it has a `then()` method.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`obj` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `obj` | `any` |
 
-**Returns:** obj is PromiseLike<unknown\>
+#### Returns
+
+obj is PromiseLike<unknown\>
 
 ___
 
-### trim
+### <a id="trim" name="trim"></a> trim
 
-▸ **trim**(`value`: *any*): *string*
+▸ **trim**(`value`): `string`
 
 A type-safe `String.trim()` that will return either the trimmed argument, or an empty string.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
 
-**Returns:** *string*
+#### Returns
+
+`string`
 
 ___
 
-### truncate
+### <a id="truncate" name="truncate"></a> truncate
 
-▸ **truncate**(`string`: *string*, `maxLen?`: *number*, `postfix?`: *string*): *string*
+▸ **truncate**(`string`, `maxLen?`, `postfix?`): `string`
 
 Truncates a string of characters to the nearest whitespace either on or before a maximum length.
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value | Description |
-:------ | :------ | :------ | :------ |
-`string` | *string* | - | The string to truncate.   |
-`maxLen` | *number* | 40 | - |
-`postfix` | *string* | ' ...' | - |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `string` | `string` | `undefined` | The string to truncate. |
+| `maxLen` | `number` | `40` | - |
+| `postfix` | `string` | `' ...'` | - |
 
-**Returns:** *string*
+#### Returns
+
+`string`
