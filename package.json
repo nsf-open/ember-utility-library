@@ -7,9 +7,9 @@
     "packages/@nsf-open/*"
   ],
   "scripts": {
-    "document": "lerna run --parallel --no-bail document",
-    "test": "lerna run --stream --no-bail test -- --test-port=0",
-    "lint:js": "lerna run --stream --parallel --no-bail lint:js",
+    "document": "npm run document --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "lint:js": "npm run lint:js --workspaces --if-present",
     "cleanup": "lerna exec -- rm -rf ./dist ./coverage",
     "version": "lerna version --conventional-commits"
   },
@@ -19,6 +19,7 @@
   "dependencies": {},
   "volta": {
     "node": "16.15.0",
+    "npm": "8.8.0",
     "yarn": "1.22.18"
   }
 }
