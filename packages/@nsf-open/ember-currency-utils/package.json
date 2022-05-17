@@ -34,7 +34,7 @@
     "@types/ember-qunit": "5.0.0",
     "@types/ember-resolver": "5.0.11",
     "@types/ember__application": "4.0.0",
-    "@types/ember__array": "3.16.5",
+    "@types/ember__array": "4.0.1",
     "@types/ember__component": "4.0.8",
     "@types/ember__controller": "3.16.7",
     "@types/ember__debug": "3.16.7",
