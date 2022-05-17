@@ -2943,7 +2943,14 @@
   dependencies:
     "@types/ember__object" "*"
 
-"@types/ember__controller@3.16.7", "@types/ember__controller@^3":
+"@types/ember__controller@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/ember__controller/-/ember__controller-4.0.0.tgz#f8891840ebb84cb54eba82385e3b2dbe805d692a"
+  integrity sha512-rxJt8McWaaIZFsu2z+IB7TvgSjglAPb07Pj0F7OGvZQ3j9NV7kreqqics/cHQIEBG3GgVAewBE+xI5D6PNq/vg==
+  dependencies:
+    "@types/ember__object" "*"
+
+"@types/ember__controller@^3":
   version "3.16.7"
   resolved "https://registry.yarnpkg.com/@types/ember__controller/-/ember__controller-3.16.7.tgz#e45d5233d7cee8a5388b401081babc30cb65e960"
   integrity sha512-oGyjQPJ5PRY10TqJuxDo4nu59sCO6/YmeY4tsItI5RbDj7hmzd9ZOxKeOI/qrQJosMdHe5cd3RP1/zZOe0Xn3Q==
@@ -11565,12 +11572,7 @@ path-key@^3.0.0, path-key@^3.1.0:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-3.1.1.tgz#581f6ade658cbba65a0d3380de7753295054f375"
   integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
 
-path-parse@^1.0.6:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
-  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
-
-path-parse@^1.0.7:
+path-parse@^1.0.6, path-parse@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
