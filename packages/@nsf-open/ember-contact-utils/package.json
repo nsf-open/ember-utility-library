@@ -16,6 +16,8 @@
     "start": "ember serve",
     "test": "npm run lint:js && ember test",
     "test:all": "ember try:each",
+    "test:ember": "ember test",
+    "test:coverage": "COVERAGE=true ember test",
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean",
     "document": "typedoc --tsconfig ./tsconfig.json",

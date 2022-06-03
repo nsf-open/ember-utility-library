@@ -9,11 +9,14 @@
   "scripts": {
     "document": "npm run document --workspaces --if-present",
     "test": "npm test --workspaces --if-present",
+    "test:coverage": "npm run test:coverage --workspaces --if-present",
+    "posttest:coverage": "npx lcov-result-merger 'packages/*/*/coverage/lcov.info' 'lcov.info' --prepend-source-files",
     "lint:js": "npm run lint:js --workspaces --if-present",
     "cleanup": "lerna exec -- rm -rf ./dist ./coverage",
     "version": "lerna version --conventional-commits"
   },
   "devDependencies": {
+    "lcov-result-merger": "^3.2.0",
     "lerna": "4.0.0"
   },
   "dependencies": {},
