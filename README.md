@@ -20,14 +20,4 @@ API
 
 Commits
 ---------------------------------------------------
-Please follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard when committing. 
-
-
-Publishing
----------------------------------------------------
-
-This mono-repo uses [Lerna](https://github.com/lerna/lerna) to manage its packages.
-
-```bash
-lerna publish
-```
+Please follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard when committing.
