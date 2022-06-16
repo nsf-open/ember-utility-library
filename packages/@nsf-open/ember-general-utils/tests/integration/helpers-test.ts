@@ -9,7 +9,7 @@ module('Integration | Helpers', function(hooks) {
 	setupRenderingTest(hooks);
 
 
-	function getText(container: Element) {
+	function getText(container: Element | Document) {
 		return container.querySelector('[data-test]')?.textContent;
 	}
 
