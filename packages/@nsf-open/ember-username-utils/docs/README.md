@@ -26,7 +26,7 @@ Configuration options for the name formatter computed decorators.
 
 #### Defined in
 
-[computed-macros.ts:12](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-username-utils/addon/computed-macros.ts#L12)
+[computed-macros.ts:12](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-username-utils/addon/computed-macros.ts#L12)
 
 ___
 
@@ -46,7 +46,7 @@ Configuration options for the name formatters.
 
 #### Defined in
 
-[formatters.ts:11](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-username-utils/addon/formatters.ts#L11)
+[formatters.ts:11](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-username-utils/addon/formatters.ts#L11)
 
 ## Functions
 
@@ -81,7 +81,7 @@ public fullName!: string; // => 'John H. Doe'
 
 #### Defined in
 
-[computed-macros.ts:35](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-username-utils/addon/computed-macros.ts#L35)
+[computed-macros.ts:35](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-username-utils/addon/computed-macros.ts#L35)
 
 ___
 
@@ -116,7 +116,7 @@ public fullName!: string; // => 'Doe, H. John'
 
 #### Defined in
 
-[computed-macros.ts:72](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-username-utils/addon/computed-macros.ts#L72)
+[computed-macros.ts:72](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-username-utils/addon/computed-macros.ts#L72)
 
 ___
 
@@ -150,7 +150,7 @@ The formatted name.
 
 #### Defined in
 
-[formatters.ts:40](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-username-utils/addon/formatters.ts#L40)
+[formatters.ts:40](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-username-utils/addon/formatters.ts#L40)
 
 ___
 
@@ -185,4 +185,4 @@ The formatted name.
 
 #### Defined in
 
-[formatters.ts:94](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-username-utils/addon/formatters.ts#L94)
+[formatters.ts:94](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-username-utils/addon/formatters.ts#L94)

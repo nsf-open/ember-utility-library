@@ -38,7 +38,7 @@ public formattedPhone!: string; // => "(123) 456-7890"
 
 #### Defined in
 
-[computed-macros.ts:16](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-contact-utils/addon/computed-macros.ts#L16)
+[computed-macros.ts:16](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-contact-utils/addon/computed-macros.ts#L16)
 
 ___
 
@@ -72,4 +72,4 @@ toDomesticUSPhoneNumber("1234", "N/A"); // => "N/A"
 
 #### Defined in
 
-[formatters.ts:23](https://github.com/nsf-open/ember-utility-library/blob/1254e7b/packages/@nsf-open/ember-contact-utils/addon/formatters.ts#L23)
+[formatters.ts:23](https://github.com/nsf-open/ember-utility-library/blob/d5c1357/packages/@nsf-open/ember-contact-utils/addon/formatters.ts#L23)

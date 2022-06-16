@@ -1,6 +1,6 @@
 {
   "name": "@nsf-open/ember-contact-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utilities for phone numbers, email, physical addresses, and more.",
   "keywords": [
     "ember-addon"
