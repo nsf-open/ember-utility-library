@@ -1,8 +1,13 @@
 module.exports = {
   root: true,
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2017,
-    sourceType: 'module'
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    requireConfigFile: false,
+    ecmaFeatures: {
+      legacyDecorators: true,
+    },
   },
   plugins: [
     'ember'
@@ -15,9 +20,23 @@ module.exports = {
     browser: true
   },
   rules: {
-		'ember/no-classic-classes': 0,
+    'ember/no-classic-classes': 0,
   },
   overrides: [
+		// Typescript
+		{
+			parser: '@typescript-eslint/parser',
+			files: ['**/*.ts'],
+			plugins: [
+				'@typescript-eslint',
+			],
+			extends: [
+				'eslint:recommended',
+				'plugin:ember/recommended',
+				'plugin:@typescript-eslint/eslint-recommended',
+				'plugin:@typescript-eslint/recommended',
+			],
+		},
     // node files
     {
       files: [
