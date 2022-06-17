@@ -14,7 +14,7 @@
     "build": "ember build",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "npm run lint:js && ember test",
+    "test": "npm run lint:js && ember test && ember ts:precompile && ember ts:clean",
     "test:ember-compatibility": "ember try:each",
     "test:ember": "ember test --test-port=0",
     "test:coverage": "COVERAGE=true ember test",
