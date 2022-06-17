@@ -18,11 +18,12 @@ jobs:
 
       - name: Run Tests
         run: |
-          yarn
+          yarn install --frozen-lockfile
           yarn run test:coverage
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
+        continue-on-error: true
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: ./lcov.info
