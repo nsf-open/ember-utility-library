@@ -56,10 +56,10 @@ module('Unit | Utility | objects', function(hooks) {
 		assert.strictEqual(isPromiseLike([]), false);
 
 		assert.strictEqual(isPromiseLike(Promise.resolve()), true);
-		assert.strictEqual(isPromiseLike({ then() {} }), true);
+		assert.strictEqual(isPromiseLike({ then() { /* noop */ } }), true);
 
-		const testFn = function() {};
-		testFn.then  = function() {};
+		const testFn = function() { /* noop */ };
+		testFn.then  = function() { /* noop */ };
 
 		assert.strictEqual(isPromiseLike(testFn), true);
 	});

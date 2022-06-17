@@ -1,5 +1,5 @@
 /** Strips special characters, leaving a string of digits. */
-function normalizePhoneNumber(value: any) {
+function normalizePhoneNumber(value: unknown) {
 	return typeof value === 'string'
 		? value.replace(/[\s()-.+]/g, '').trim()
 		: (typeof value === 'number' ? value.toString(10) : undefined);
@@ -20,7 +20,7 @@ function normalizePhoneNumber(value: any) {
  * toDomesticUSPhoneNumber("1234", "N/A"); // => "N/A"
  * ```
  */
-export function toDomesticUSPhoneNumber(value: any, defaultValue = 'None'): string {
+export function toDomesticUSPhoneNumber(value: unknown, defaultValue = 'None'): string {
 	const normalized = normalizePhoneNumber(value);
 
 	if (normalized) {

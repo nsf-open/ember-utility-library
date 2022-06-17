@@ -8,11 +8,11 @@ module('Unit | Utility | arrays', function(hooks) {
 
 
 	test('intersection()', function(assert) {
-		// @ts-expect-error
+		// @ts-expect-error - purposefully providing an invalid argument
 		assert.deepEqual(intersection(null, null), []);
-		// @ts-expect-error
+		// @ts-expect-error - purposefully providing an invalid argument
 		assert.deepEqual(intersection([], null), []);
-		// @ts-expect-error
+		// @ts-expect-error - purposefully providing an invalid argument
 		assert.deepEqual(intersection(null, []), []);
 
 		assert.deepEqual(intersection([], []), []);

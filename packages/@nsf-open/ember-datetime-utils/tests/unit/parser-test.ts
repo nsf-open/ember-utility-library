@@ -82,10 +82,10 @@ module('Unit | Utility | parseDateTime()', function(hooks) {
 		);
 
 		assert.strictEqual(
-		  moment(parseDateTime('01/02/3000 08:31:14')).format('MM/DD/YYYY'),
-      '01/02/3000',
-      'MM/DD/YYYY HH:mm:ss'
-    );
+			moment(parseDateTime('01/02/3000 08:31:14')).format('MM/DD/YYYY'),
+			'01/02/3000',
+			'MM/DD/YYYY HH:mm:ss'
+		);
 	});
 
 

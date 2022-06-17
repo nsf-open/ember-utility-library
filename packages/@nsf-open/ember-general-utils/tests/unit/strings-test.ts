@@ -14,7 +14,7 @@ module('Unit | Utility | strings', function(hooks) {
 
 
 	test('truncate()', function(assert) {
-		// @ts-expect-error
+		// @ts-expect-error - purposefully providing an invalid argument
 		assert.throws(() => truncate(null));
 
 		assert.strictEqual(
@@ -50,7 +50,7 @@ module('Unit | Utility | strings', function(hooks) {
 
 
 	test('humanize()', function(assert) {
-		// @ts-expect-error
+		// @ts-expect-error - purposefully providing an invalid argument
 		assert.throws(() => humanize(null));
 
 		assert.strictEqual(humanize('fooBarBaz'),   'Foo bar baz');
