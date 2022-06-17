@@ -9,6 +9,7 @@
   "scripts": {
     "document": "npm run document --workspaces --if-present",
     "test": "npm test --workspaces --if-present",
+    "test:ember-compatibility": "npm run test:ember-compatibility --workspaces --if-present",
     "test:coverage": "npm run test:coverage --workspaces --if-present",
     "posttest:coverage": "npx lcov-result-merger 'packages/*/*/coverage/lcov.info' 'lcov.info' --prepend-source-files",
     "lint:js": "npm run lint:js --workspaces --if-present",
