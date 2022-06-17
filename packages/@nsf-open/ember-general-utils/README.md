@@ -1,6 +1,6 @@
 @nsf-open/ember-general-utils
 ==============================================================================
-
+A catch-all for utilities methods that don't have a more specific home.
 
 Installation
 ------------------------------------------------------------------------------
@@ -15,4 +15,4 @@ API
 
 Compatibility
 ------------------------------------------------------------------------------
-* Ember.js v3.6 or above
+* Ember.js v3.16 or above

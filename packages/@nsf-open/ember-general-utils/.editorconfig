@@ -13,6 +13,9 @@ insert_final_newline = true
 indent_style = tab
 indent_size = 2
 
+[*.json]
+indent_style = space
+
 [*.hbs]
 insert_final_newline = false
 

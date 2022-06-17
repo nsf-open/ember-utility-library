@@ -16,4 +16,4 @@ API
 
 Compatibility
 ------------------------------------------------------------------------------
-* Ember.js v3.6 or above
+* Ember.js v3.16 or above

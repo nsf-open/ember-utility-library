@@ -3,10 +3,21 @@
   "version": "2.0.0",
   "description": "Utilities for phone numbers, email, physical addresses, and more.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "phone number formatting",
+    "utility",
+    "NSF",
+    "National Science Foundation"
   ],
   "license": "MIT",
   "author": "National Science Foundation",
+  "repository": {
+    "url": "https://github.com/nsf-open/ember-utility-library",
+    "directory": "packages/@nsf-open/ember-contact-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/nsf-open/ember-utility-library/issues"
+  },
   "directories": {
     "test": "tests"
   },

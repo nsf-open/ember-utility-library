@@ -3,10 +3,21 @@
   "version": "2.0.0",
   "description": "Utilities for converting numbers to currency, and currency to numbers.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "currency formatting",
+    "utility",
+    "NSF",
+    "National Science Foundation"
   ],
   "license": "MIT",
   "author": "National Science Foundation",
+  "repository": {
+    "url": "https://github.com/nsf-open/ember-utility-library",
+    "directory": "packages/@nsf-open/ember-currency-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/nsf-open/ember-utility-library/issues"
+  },
   "directories": {
     "test": "tests"
   },

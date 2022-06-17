@@ -1,14 +1,15 @@
 {
-	"packages": ["packages/@nsf-open/*"],
-	"version": "independent",
-	"granularPathspec": false,
-	"npmClient": "yarn",
-	"useWorkspaces": true,
-	"command": {
-		"version": {
-			"conventionalCommits": true,
-			"allowBranch": "main",
-			"message": "chore(release): publish"
-		}
-	}
+  "packages": ["packages/@nsf-open/*"],
+  "version": "independent",
+  "granularPathspec": false,
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "allowBranch": "main",
+      "message": "chore(release): publish",
+      "createRelease": "github"
+    }
+  }
 }

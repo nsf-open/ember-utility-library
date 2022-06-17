@@ -3,10 +3,20 @@
   "version": "2.0.0",
   "description": "",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "utility",
+    "NSF",
+    "National Science Foundation"
   ],
   "license": "MIT",
   "author": "National Science Foundation",
+  "repository": {
+    "url": "https://github.com/nsf-open/ember-utility-library",
+    "directory": "packages/@nsf-open/ember-general-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/nsf-open/ember-utility-library/issues"
+  },
   "directories": {
     "test": "tests"
   },
