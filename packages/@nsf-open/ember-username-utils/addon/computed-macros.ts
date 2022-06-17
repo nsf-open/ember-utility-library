@@ -37,7 +37,7 @@ export function formatFirstNameFirst(
 	middleNameKey: string,
 	lastNameKey:   string,
 	options:       FormatMacroOptions = {}
-) {
+): PropertyDecorator {
 	const opts = { fallbackKey: 'id', defaultText: '', ...options };
 	const keys = [firstNameKey, middleNameKey, lastNameKey, opts.fallbackKey].filter(Boolean) as DependantKeys;
 
@@ -74,7 +74,7 @@ export function formatLastNameFirst(
 	middleNameKey: string,
 	lastNameKey:   string,
 	options:       FormatMacroOptions = {}
-) {
+): PropertyDecorator {
 	const opts = { fallbackKey: 'id', defaultText: '', ...options };
 	const keys = [firstNameKey, middleNameKey, lastNameKey, opts.fallbackKey].filter(Boolean) as DependantKeys;
 

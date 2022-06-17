@@ -16,7 +16,7 @@ import { fromUSDFormat, toUSDFormat } from './formatters';
  * public numericCost!: number; // => 12345.55
  * ```
  */
-export function fromUSD(dependantKey: string) {
+export function fromUSD(dependantKey: string): PropertyDecorator {
 	return computed(dependantKey, function computedFromUSD() {
 		return fromUSDFormat(get(this, dependantKey));
 	});
@@ -37,7 +37,7 @@ export function fromUSD(dependantKey: string) {
  * public formattedDouble!: string; // => "$12,345.55"
  * ```
  */
-export function toUSD(dependantKey: string, showCentsOrOptions: ToFormatOptions | boolean = false) {
+export function toUSD(dependantKey: string, showCentsOrOptions: ToFormatOptions | boolean = false): PropertyDecorator {
 	return computed(dependantKey, function computedToUSD() {
 		return toUSDFormat(get(this, dependantKey), showCentsOrOptions);
 	});
