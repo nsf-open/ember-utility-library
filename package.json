@@ -3,6 +3,7 @@
   "author": "National Science Foundation",
   "license": "MIT",
   "private": true,
+  "version": "0.0.0",
   "workspaces": [
     "packages/@nsf-open/*"
   ],
@@ -13,8 +14,7 @@
     "test:coverage": "npm run test:coverage --workspaces --if-present",
     "posttest:coverage": "npx lcov-result-merger 'packages/*/*/coverage/lcov.info' 'lcov.info' --prepend-source-files",
     "lint:js": "npm run lint:js --workspaces --if-present",
-    "cleanup": "lerna exec -- rm -rf ./dist ./coverage",
-    "version": "lerna version --conventional-commits"
+    "cleanup": "lerna exec -- rm -rf ./dist ./coverage"
   },
   "devDependencies": {
     "lcov-result-merger": "^3.2.0",
