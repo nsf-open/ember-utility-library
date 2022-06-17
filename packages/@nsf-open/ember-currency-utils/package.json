@@ -1,6 +1,6 @@
 {
   "name": "@nsf-open/ember-currency-utils",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Utilities for converting numbers to currency, and currency to numbers.",
   "keywords": [
     "ember-addon"
