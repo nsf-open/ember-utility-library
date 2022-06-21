@@ -1,7 +1,7 @@
 {
   "name": "@nsf-open/ember-general-utils",
   "version": "2.0.1",
-  "description": "",
+  "description": "A catch-all for utilities methods that don't have a more specific home.",
   "keywords": [
     "ember-addon",
     "utility",
