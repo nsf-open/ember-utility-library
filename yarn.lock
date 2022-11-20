@@ -3650,12 +3650,20 @@
     "@types/ember__test-helpers" "*"
     "@types/qunit" "*"
 
-"@types/ember-resolver@*", "@types/ember-resolver@5.0.11":
+"@types/ember-resolver@*":
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/@types/ember-resolver/-/ember-resolver-5.0.11.tgz#db931fb5c2d6bda4e29adea132fb48c7ed17aa62"
   integrity sha512-2BL9d8kBdNUO9Je6KBF7Q34BSwbQG6vzCzTeSopt8FAmLDfaDU9xDDdyZobpfy9GR36mCSeG9b9wr4bgYh/MYw==
   dependencies:
     "@types/ember__object" "*"
+
+"@types/ember-resolver@5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@types/ember-resolver/-/ember-resolver-5.0.13.tgz#db66678076ca625ed80b629c09619ae85c1c1f7a"
+  integrity sha512-pO964cAPhAaFJoS28M8+b5MzAhQ/tVuNM4GDUIAexheQat36axG2WTG8LQ5ea07MSFPesrRFk2T3z88pfvdYKA==
+  dependencies:
+    "@types/ember__object" "*"
+    "@types/ember__owner" "*"
 
 "@types/ember@*":
   version "4.0.0"
@@ -3796,6 +3804,11 @@
     "@types/ember" "*"
     "@types/ember__object" "*"
     "@types/rsvp" "*"
+
+"@types/ember__owner@*":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__owner/-/ember__owner-4.0.2.tgz#ecad24830ad3f624da402dd6f56ed8881c94a473"
+  integrity sha512-o68xsw62HA269AWebw8VcrPKDDfoNqU+F06hwpIy5vZ5bJY1RAdOp+IFRVaKK+DqpkwQCIpDZVUta5f5QE6jrw==
 
 "@types/ember__polyfills@*", "@types/ember__polyfills@4.0.0":
   version "4.0.0"
